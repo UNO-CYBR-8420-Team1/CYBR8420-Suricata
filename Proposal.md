@@ -31,6 +31,34 @@ This and many more features of the software of which is well documented.
 
 The Suricata project is continuously evolving with regular/recent [security patches and updates](https://suricata.io/category/release/). The development team maintains an active changelog to track all known vulnerabilities, mitigations, and feature upgrades, ensuring that Suricata remains a reliable and secure network monitoring solution. 
 
+# Perceived Threats by Users
+Attackers could try to breach the network with common attacks like:
+-   Brute for attacks
+-   Buffer overflow
+-   Zero days vulnerabilities
+-   DoS
+
+Therefore  suricata users are expecting protection against these **network based attacks**.
+-   **Malware infection**: suricata  is able to detect malware signature via IDS and IPS signatures
+-   **Advanced Persistent Threats**: Suricata is expected to recognize patterns of data exfiltration, anomalous behavior, and unauthorized access attempts by attackers who have gained access through phishing or exploiting vulnerabilities.
+-   **Man in the middle attack**: suricata is expected to detect suspicious SSL/TLS certificates or attempts to downgrade secure connections, packet tampering or modification during transit
+-   **Data Exfiltration**: Suricata  is able to detect unusual outbound traffic patterns or large data uploads
+-   **Vulnerability**: Suricata is able to detect vulnerability scans or reconnaissance attempts by attackers, any outdated or misconfigured services on the network
+-   **Web Application Attacks**: Suricata can detect SQL Injection, Cross-Site Scripting (XSS), and Remote File Inclusions
+
+# Suricata Features
+-   **Intrusion Detection System (IDS)** – Monitors network traffic for suspicious patterns and generates alerts for potential threats.
+-   **Intrusion Prevention System (IPS)** – Actively blocks or prevents malicious traffic based on predefined security rules.
+-   **Network Security Monitoring (NSM)** – Provides real-time analysis of network traffic for security insights and anomaly detection.
+-   **Deep Packet Inspection (DPI)** – Examines the content of data packets to detect malicious activities at various protocol layers.
+-   **Protocol Detection and Parsing** – Identifies and decodes common network protocols (e.g., HTTP, SSH) to detect abnormalities or malicious use.
+-   **TLS/SSL Decryption** – Monitors and analyzes encrypted network traffic by decrypting SSL/TLS connections for deeper inspection.
+-   **Signature-Based Detection** – Uses signatures to detect known attacks and vulnerabilities in network traffic.
+-   **File Extraction and MD5 Hashing** – Extracts files from network traffic and generates hashes for malware analysis and detection.
+-   **High Performance Multi-Threading** – Efficiently handles high volumes of traffic using multi-threading for faster and scalable detection.
+-   **EVE JSON Output**– Logs network events in structured JSON format for easy integration with external analysis tools.
+-   **Flow Tracking** – Tracks and monitors individual network flows to identify persistent or long-lived connections.
+
 # Systems Engineer View
 ![Systems Engineering View - GITHUB IMAGE](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/SystemsEngineeringView_Suricata.png) 
 
