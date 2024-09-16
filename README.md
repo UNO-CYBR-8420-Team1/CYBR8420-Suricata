@@ -13,21 +13,5 @@ Matthew Popelka
 # Open-Source Project: https://suricata.io/
 GitHub: https://github.com/OISF/suricata
 
-Project Description:
-
-Operational Environment: 
-
-System Software System Diagram View: 
-
-Security Needs, Threats, and Features:
-Threads Perceived by Users:
-List of Security Features: 
-
-Project Choice Motivations:
-
-License Summary and Contributor Agreement: 
-
-Security History: 
-
-Project Planning & Reflection: 
+Proposal - https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Proposal.md 
 
