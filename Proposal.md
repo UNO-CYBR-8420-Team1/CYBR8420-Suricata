@@ -27,8 +27,6 @@ The [Suricata Documentation](https://docs.suricata.io/en/latest/) site provides 
 
 One recent feature addition is the EVE JSON output, which provides detailed logs for security events in an easy parsable format. This enhances the visibility and auditability of security events in the network.  
 
-This and many more features of the software of which is well documented. 
-
 The Suricata project is continuously evolving with regular/recent [security patches and updates](https://suricata.io/category/release/). The development team maintains an active changelog to track all known vulnerabilities, mitigations, and feature upgrades, ensuring that Suricata remains a reliable and secure network monitoring solution. 
 
 # Perceived Threats by Users
