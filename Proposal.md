@@ -58,7 +58,7 @@ Therefore  Suricata users are expecting protection against these **network based
 -   **Flow Tracking**: Tracks and monitors individual network flows to identify persistent or long-lived connections.
 
 # Systems Engineer View
-![Systems Engineering View - GITHUB IMAGE](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/SystemsEngineeringView_Suricata.png) 
+![Systems Engineering View - GITHUB IMAGE](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/SystemsEngineeringView_Suricata_Final.png) 
 
 
 # License Summary
