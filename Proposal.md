@@ -32,14 +32,14 @@ This and many more features of the software of which is well documented.
 The Suricata project is continuously evolving with regular/recent [security patches and updates](https://suricata.io/category/release/). The development team maintains an active changelog to track all known vulnerabilities, mitigations, and feature upgrades, ensuring that Suricata remains a reliable and secure network monitoring solution. 
 
 # Systems Engineer View
-![Test](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/SystemsEngineeringView_Suricata.png) 
+![Systems Engineering View - GITHUB IMAGE](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/SystemsEngineeringView_Suricata.png) 
 
 
 # License Summary
-The Open Information Security Foundation (OISF) utilizes a GPL-2.0 license for maintaining the Suricata software. This form of license is recognized as a Copyleft license under the “as-is” Free and Open-Source Software (FOSS) license distinction. This enables contributions to be made to the software provided that specified guidelines are adhered to. The specifications under this license ensure that the software along with any subsequent additions or revisions be available to the users of the software. Additionally, all components pertaining to additions or revisions of the software must comply with the GPL-2.0 license for distribution. 
+The Open Information Security Foundation (OISF) utilizes a [GPL-2.0 license](https://suricata.io/gpl-faqs/) for maintaining the Suricata software. This form of license is recognized as a Copyleft license under the “as-is” Free and Open-Source Software (FOSS) license distinction. This enables contributions to be made to the software provided that specified guidelines are adhered to. The specifications under this license ensure that the software along with any subsequent additions or revisions be available to the users of the software. Additionally, all components pertaining to additions or revisions of the software must comply with the GPL-2.0 license for distribution. 
 
 # Contributor Agreement 
-Agreements for contributing to Suricata can be found on their website. Two different forms of agreements are present for those seeking to contribute to Suricata in the form of individual and enterprise agreements respectively. Each agreement outlines information pertaining to important areas of note for making contributions to the software whether from independent people or companies. It is necessary to fill out and agree to the information contained within the agreement for making contributions. In addition to the contributor agreements provided for Suricata, a number of steps are provided on how to properly contribute to Suricata through its documentation site. Namely, the process for providing contributions entails how to get into communication with the Suricata community, how to operate with tickets for software, and how to adhere to code and documentation norms. 
+Agreements for contributing to Suricata can be found on their website. Two different forms of agreements are present for those seeking to contribute to Suricata in the form of [individual](https://suricata.io/our-story/contribution-agreement/) and [enterprise](https://suricata.io/our-story/enterprise-agreement/) agreements respectively. Each agreement outlines information pertaining to important areas of note for making contributions to the software whether from independent people or companies. It is necessary to fill out and agree to the information contained within the agreement for making contributions. In addition to the contributor agreements provided for Suricata, a number of steps are provided on how to properly contribute to Suricata through its [documentation site](https://docs.suricata.io/en/latest/devguide/contributing/contribution-process.html). Namely, the process for providing contributions entails how to get into communication with the Suricata community, how to operate with tickets for software, and how to adhere to code and documentation norms. 
 
 # Project Planning w/ Reflection and Contributions 
 Some reflections on our teamwork as a whole, we did a great job initially forming the team and getting that finalized. To start with team forming, Matt proactively reached out to Ben and myself via work since we all work for Union Pacific. There were others as well, but they already formed the team. Grace was early reaching out about joining a team and Shane as well. We’re very open minded to backgrounds and want to be welcoming to everyone so we offered and selected them to join the team.  
@@ -55,23 +55,11 @@ We discussed our backgrounds and experiences to start, but then decided to take 
 We then divided the work based on the deliverables and created a deadline to get them done by Monday. The team did great each offering to handle pieces based on their skillset and desired interests. Individuals provided a draft early enough to give others a chance to peer review before Monday, and proactively did provide feedback on the other’s items. All team members met the expectations once we could get them set clearly.  
 
 Here's how we split responsibilities to create initial drafts: 
-
-Systems Engineering View - Matt 
-
-Security Needs, Threats, and Features - Grace 
-
-Motivation - Ben 
-
-OSS project description - Ben 
-
-License Summary and Contributor Agreement - Shane 
-
-Security History - Grace 
-
-Project Planning and Reflection - Nathan 
-
-Final Delivery in GitHub – Nathan & Shane 
-
-   
-
- 
+ - Systems Engineering View - Matt 
+ - Security Needs, Threats, and Features - Grace
+ - Motivation - Ben 
+ - OSS project description - Ben 
+ - License Summary and Contributor Agreement - Shane 
+ - Security History - Grace
+ - Project Planning and Reflection - Nathan 
+ - Final Delivery in GitHub – Nathan & Shane 
