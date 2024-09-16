@@ -1,0 +1,77 @@
+# Project Description
+Suricata is an open-source NSM program that is managed and maintained by the Open Information Security Foundation (OISF) that features an Intrusion Detection System (IDS) and Intrusion Prevention System (IPS) as the more notable components. This system is advertised both to private and public entities as a means to both actively sniff and avert bad actors while also allowing for users to set custom rules tailored to the needs of the user’s system. In addition to rules created by the user, the system can actively capture network data for logging and assessing anomalies found while utilizing this system. The logs the software captures can then be used to adjust the settings to help create/maintain a more robust system. The peace of mind that comes with this NSM is the backing of an active foundation that will continue to provide support as long as it is around. This OSS continues to run stable with the most recent release on June 27, 2024 with ongoing pre-conference training (intrusion analysis & threat hunting) found on upcoming events on their website. There are currently 193 contributors with the primary languages being C and Rust. 
+
+# Team Motivation
+The core need for integrity of an organization's system isn’t going away and will always be around as long as there are bad actors in the cyberworld. The need for Network Security Monitoring (NSM) helps the organization reinforce their foundation both by allowing proactive and reactive measures. Suricata allows for an additional layer of security awareness to be able to monitor, log, restrict, and alert the organization of their network findings. We believe that of the projects researched this one has stood out to us and is a tool we might be able to better understand and utilize. A couple of members from our group are also in the networking field so an opportunity to dive deeper into an open-source system that could prove to be useful in our everyday job proves to be a great chance to learn more about it. Additionally, as developing individuals in the security space this is a good avenue to contribute to software assurance. 
+
+# Security Background and History
+Security-related history of Suricata: 
+
+Suricata was created in 2009 by the Open Information Security Foundation (OISF). The project was initiated to create an advanced open-source Intrusion Detection System (IDS) and Intrusion Prevention System (IPS) that could address the increasing complexities of modern network security. Since then, it has evolved significantly to include various features like Deep Packet Inspection (DPI), Network Security Monitoring (NSM), and threat detection capabilities. 
+
+Through the Common Vulnerabilities and Exposure (CVE) website we can see a database list of publicly disclosed vulnerabilities as pertained to Suricata. For instance:  
+
+CVE-2024-28870 Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine developed by the OISF and the Suricata community. When parsing an overly long SSH banner, Suricata can use excessive CPU resources, as well as cause excessive logging volume in alert records. This issue has been patched in versions 6.0.17 and 7.0.4. https://www.cve.org/CVERecord?id=CVE-2024-28870 
+
+Impact: This vulnerability could lead to two primary issues: 
+
+Excessive CPU Usage: When Suricata encountered a very long SSH banner, it could cause a spike in CPU usage due to the effort required to parse such a large string. This could degrade system performance, making Suricata slow or unresponsive, which is critical in a high-performance security monitoring environment. 
+
+Excessive Logging Volume: In addition to performance issues, Suricata would generate excessive logs related to this anomaly, overwhelming the logging system. This could cause storage and log management issues, and even make it harder to spot legitimate security incidents in the sea of generated log entries. 
+
+This is particularly important because an attacker could exploit this vulnerability by sending an artificially long SSH banner to a Suricata-monitored system. The issue was addressed and patched in Suricata versions 6.0.17 and 7.0.4. 
+
+
+
+The Suricata Documentation (https://docs.suricata.io/en/latest/# ) site provides in-depth information on features, updates, and protocol parsers. We can find detailed descriptions of security features and system designs. For instance, it seems like they are using a modular design for security features to be updated or replaced without affecting the entire system like Protocol parsers, detection engine, I/O layer... seem to be standing as separated modules that interact with one another. 
+
+One recent feature addition is the EVE JSON output, which provides detailed logs for security events in an easy parsable format. This enhances the visibility and auditability of security events in the network.  
+
+This and many more features of the software of which is well documented. 
+
+The Suricata project is continuously evolving with regular/recent security patches and updates (https://suricata.io/category/release/ ). The development team maintains an active changelog to track all known vulnerabilities, mitigations, and feature upgrades, ensuring that Suricata remains a reliable and secure network monitoring solution. 
+
+# Systems Engineer View
+- INSERT HERE - 
+
+
+# License Summary
+The Open Information Security Foundation (OISF) utilizes a GPL-2.0 license for maintaining the Suricata software. This form of license is recognized as a Copyleft license under the “as-is” Free and Open-Source Software (FOSS) license distinction. This enables contributions to be made to the software provided that specified guidelines are adhered to. The specifications under this license ensure that the software along with any subsequent additions or revisions be available to the users of the software. Additionally, all components pertaining to additions or revisions of the software must comply with the GPL-2.0 license for distribution. 
+
+# Contributor Agreement 
+Agreements for contributing to Suricata can be found on their website. Two different forms of agreements are present for those seeking to contribute to Suricata in the form of individual and enterprise agreements respectively. Each agreement outlines information pertaining to important areas of note for making contributions to the software whether from independent people or companies. It is necessary to fill out and agree to the information contained within the agreement for making contributions. In addition to the contributor agreements provided for Suricata, a number of steps are provided on how to properly contribute to Suricata through its documentation site. Namely, the process for providing contributions entails how to get into communication with the Suricata community, how to operate with tickets for software, and how to adhere to code and documentation norms. 
+
+# Project Planning w/ Reflection and Contributions 
+Some reflections on our teamwork as a whole, we did a great job initially forming the team and getting that finalized. To start with team forming, Matt proactively reached out to Ben and myself via work since we all work for Union Pacific. There were others as well, but they already formed the team. Grace was early reaching out about joining a team and Shane as well. We’re very open minded to backgrounds and want to be welcoming to everyone so we offered and selected them to join the team.  
+
+We some limited discussions started early, but we had trouble finding a common time to meet. Nathan setup a ‘when2meet’ and got responses from everyone, but not a single time was available for a group meeting, especially before the planned professor meeting time. Most of us work full time, with limited confidence to “get away” during work. While others had important family commitments and other scheduled classes to attend outside the “9 to 5” work. One reflection an observation on the team size. With the more people we have in a team, it can really help divide and bring a diverse set of experiences to tackle a project like this. However, it can also cause scheduling conflicts like we’ve found. We’re also very proactively handling the scheduling conflicts via meeting in smaller groups, setting clear expectations and more active communication via the Discord server instead of Canvas.  
+
+Shane proposed a discord server to communicate more effectively than Nathan’s original attempt to use the Canvas announcements. It worked and we all get set up pretty well and will use that for our regular meetings. Grace did an excellent job pushing the topic of signup for a professor meeting time, so we booked that to get it in. Ben stepped up and volunteered to be the designated “team lead” but we all worked together to agree upon next steps. 
+
+After meeting with the professor, we immediately met and agreed upon a regular meeting time of Friday during lunch (12pm to 1pm) and that should work.  
+
+We discussed our backgrounds and experiences to start, but then decided to take an approach to all get proposal for open-source projects. We agreed to each come forward with several options and details before our Friday meeting, and we all did so. There was some active banter before the meeting and we all participated in the discussions to arrive on the decision to go with Suricata. We each discussed the scope of the project, familiarity with different tech and goals of interests.  
+
+We then divided the work based on the deliverables and created a deadline to get them done by Monday. The team did great each offering to handle pieces based on their skillset and desired interests. Individuals provided a draft early enough to give others a chance to peer review before Monday, and proactively did provide feedback on the other’s items. All team members met the expectations once we could get them set clearly.  
+
+Here's how we split responsibilities to create initial drafts: 
+
+Systems Engineering View - Matt 
+
+Security Needs, Threats, and Features - Grace 
+
+Motivation - Ben 
+
+OSS project description - Ben 
+
+License Summary and Contributor Agreement - Shane 
+
+Security History - Grace 
+
+Project Planning and Reflection - Nathan 
+
+Final Delivery in GitHub – Nathan & Shane 
+
+   
+
+ 
