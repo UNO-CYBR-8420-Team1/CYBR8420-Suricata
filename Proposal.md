@@ -23,7 +23,7 @@ This is particularly important because an attacker could exploit this vulnerabil
 
 
 
-The [Suricata Documentation](https://docs.suricata.io/en/latest/) site provides in-depth information on features, updates, and protocol parsers. We can find detailed descriptions of security features and system designs. For instance, it seems like they are using a **modular design** for security features to be updated or replaced without affecting the entire system like Protocol parsers, detection engine, I/O layer... seem to be standing as separated modules that interact with one another. 
+The [Suricata Documentation](https://docs.suricata.io/en/latest/) site provides in-depth information on features, updates, and protocol parsers. We can find detailed descriptions of security features and system designs. For instance, it seems like they are using a **modular design** for security features to be updated or replaced without affecting the entire system ( Protocol parsers, detection engine, I/O layer, etc. ). These are separated modules that interact with one another. 
 
 One recent feature addition is the EVE JSON output, which provides detailed logs for security events in an easy parsable format. This enhances the visibility and auditability of security events in the network.  
 
