@@ -1,38 +1,38 @@
+
 # Project Description
-Suricata is an open-source NSM program that is managed and maintained by the Open Information Security Foundation (OISF) that features an Intrusion Detection System (IDS) and Intrusion Prevention System (IPS) as the more notable components. This system is advertised both to private and public entities as a means to both actively sniff and avert bad actors while also allowing for users to set custom rules tailored to the needs of the user’s system. In addition to rules created by the user, the system can actively capture network data for logging and assessing anomalies found while utilizing this system. The logs the software captures can then be used to adjust the settings to help create/maintain a more robust system. The peace of mind that comes with this NSM is the backing of an active foundation that will continue to provide support as long as it is around. This OSS continues to run stable with the most recent release on June 27, 2024 with ongoing pre-conference training (intrusion analysis & threat hunting) found on upcoming events on their website. There are currently 193 contributors with the primary languages being C and Rust. 
+Suricata is an open-source NSM program that is managed and maintained by the Open Information Security Foundation (OISF) that features an Intrusion Detection System (IDS) and Intrusion Prevention System (IPS) as the more notable components. This system is advertised both to private and public entities as a means to both actively sniff and avert bad actors while also allowing for users to set custom rules tailored to the needs of the user’s system. In addition to rules created by the user, the system can actively capture network data for logging and assessing anomalies found while utilizing this system. The logs the software captures can then be used to adjust the settings to help create/maintain a more robust system. The peace of mind that comes with this NSM is the backing of an active foundation that will continue to provide support as long as it is around. This OSS continues to run stable with the most recent release on June 27, 2024 with ongoing pre-conference training ([intrusion analysis & threat hunting](https://suricata.io/event/intrusion-analysis-threat-hunting-suricon2024-pre-conference-training/)) found on upcoming events on their website. There are currently 193 contributors with the primary languages being C and Rust. 
 
 # Team Motivation
 The core need for integrity of an organization's system isn’t going away and will always be around as long as there are bad actors in the cyberworld. The need for Network Security Monitoring (NSM) helps the organization reinforce their foundation both by allowing proactive and reactive measures. Suricata allows for an additional layer of security awareness to be able to monitor, log, restrict, and alert the organization of their network findings. We believe that of the projects researched this one has stood out to us and is a tool we might be able to better understand and utilize. A couple of members from our group are also in the networking field so an opportunity to dive deeper into an open-source system that could prove to be useful in our everyday job proves to be a great chance to learn more about it. Additionally, as developing individuals in the security space this is a good avenue to contribute to software assurance. 
 
 # Security Background and History
-Security-related history of Suricata: 
 
 Suricata was created in 2009 by the Open Information Security Foundation (OISF). The project was initiated to create an advanced open-source Intrusion Detection System (IDS) and Intrusion Prevention System (IPS) that could address the increasing complexities of modern network security. Since then, it has evolved significantly to include various features like Deep Packet Inspection (DPI), Network Security Monitoring (NSM), and threat detection capabilities. 
 
 Through the Common Vulnerabilities and Exposure (CVE) website we can see a database list of publicly disclosed vulnerabilities as pertained to Suricata. For instance:  
 
-CVE-2024-28870 Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine developed by the OISF and the Suricata community. When parsing an overly long SSH banner, Suricata can use excessive CPU resources, as well as cause excessive logging volume in alert records. This issue has been patched in versions 6.0.17 and 7.0.4. https://www.cve.org/CVERecord?id=CVE-2024-28870 
+**CVE-2024-28870** Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine developed by the OISF and the Suricata community. When parsing an overly long SSH banner, Suricata can use excessive CPU resources, as well as cause excessive logging volume in alert records. This issue has been patched in versions 6.0.17 and 7.0.4. https://www.cve.org/CVERecord?id=CVE-2024-28870 
 
-Impact: This vulnerability could lead to two primary issues: 
+**CVE Impact (2):** This vulnerability could lead to two primary issues: 
 
-Excessive CPU Usage: When Suricata encountered a very long SSH banner, it could cause a spike in CPU usage due to the effort required to parse such a large string. This could degrade system performance, making Suricata slow or unresponsive, which is critical in a high-performance security monitoring environment. 
+*(1) Excessive CPU Usage:* When Suricata encountered a very long SSH banner, it could cause a spike in CPU usage due to the effort required to parse such a large string. This could degrade system performance, making Suricata slow or unresponsive, which is critical in a high-performance security monitoring environment. 
 
-Excessive Logging Volume: In addition to performance issues, Suricata would generate excessive logs related to this anomaly, overwhelming the logging system. This could cause storage and log management issues, and even make it harder to spot legitimate security incidents in the sea of generated log entries. 
+*(2) Excessive Logging Volume:* In addition to performance issues, Suricata would generate excessive logs related to this anomaly, overwhelming the logging system. This could cause storage and log management issues, and even make it harder to spot legitimate security incidents in the sea of generated log entries. 
 
-This is particularly important because an attacker could exploit this vulnerability by sending an artificially long SSH banner to a Suricata-monitored system. The issue was addressed and patched in Suricata versions 6.0.17 and 7.0.4. 
+This is particularly important because an attacker could exploit this vulnerability by sending an **artificially long SSH banner** to a Suricata-monitored system. The issue was addressed and **patched in Suricata versions 6.0.17 and 7.0.4**. 
 
 
 
-The Suricata Documentation (https://docs.suricata.io/en/latest/# ) site provides in-depth information on features, updates, and protocol parsers. We can find detailed descriptions of security features and system designs. For instance, it seems like they are using a modular design for security features to be updated or replaced without affecting the entire system like Protocol parsers, detection engine, I/O layer... seem to be standing as separated modules that interact with one another. 
+The [Suricata Documentation](https://docs.suricata.io/en/latest/) site provides in-depth information on features, updates, and protocol parsers. We can find detailed descriptions of security features and system designs. For instance, it seems like they are using a **modular design** for security features to be updated or replaced without affecting the entire system like Protocol parsers, detection engine, I/O layer... seem to be standing as separated modules that interact with one another. 
 
 One recent feature addition is the EVE JSON output, which provides detailed logs for security events in an easy parsable format. This enhances the visibility and auditability of security events in the network.  
 
 This and many more features of the software of which is well documented. 
 
-The Suricata project is continuously evolving with regular/recent security patches and updates (https://suricata.io/category/release/ ). The development team maintains an active changelog to track all known vulnerabilities, mitigations, and feature upgrades, ensuring that Suricata remains a reliable and secure network monitoring solution. 
+The Suricata project is continuously evolving with regular/recent [security patches and updates](https://suricata.io/category/release/). The development team maintains an active changelog to track all known vulnerabilities, mitigations, and feature upgrades, ensuring that Suricata remains a reliable and secure network monitoring solution. 
 
 # Systems Engineer View
-- INSERT HERE - 
+![Test](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/SystemsEngineeringView_Suricata.png) 
 
 
 # License Summary
