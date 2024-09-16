@@ -36,10 +36,10 @@ Attackers could try to breach the network with common attacks like:
 -   Zero days vulnerabilities
 -   DoS
 
-Therefore  suricata users are expecting protection against these **network based attacks**.
--   **Malware infection**: suricata  is able to detect malware signature via IDS and IPS signatures
+Therefore  Suricata users are expecting protection against these **network based attacks**.
+-   **Malware infection**: Suricata  is able to detect malware signature via IDS and IPS signatures
 -   **Advanced Persistent Threats**: Suricata is expected to recognize patterns of data exfiltration, anomalous behavior, and unauthorized access attempts by attackers who have gained access through phishing or exploiting vulnerabilities.
--   **Man in the middle attack**: suricata is expected to detect suspicious SSL/TLS certificates or attempts to downgrade secure connections, packet tampering or modification during transit
+-   **Man in the middle attack**: Suricata is expected to detect suspicious SSL/TLS certificates or attempts to downgrade secure connections, packet tampering or modification during transit
 -   **Data Exfiltration**: Suricata  is able to detect unusual outbound traffic patterns or large data uploads
 -   **Vulnerability**: Suricata is able to detect vulnerability scans or reconnaissance attempts by attackers, any outdated or misconfigured services on the network
 -   **Web Application Attacks**: Suricata can detect SQL Injection, Cross-Site Scripting (XSS), and Remote File Inclusions
