@@ -31,7 +31,7 @@ The Suricata project is continuously evolving with regular/recent [security patc
 
 # Perceived Threats by Users
 Attackers could try to breach the network with common attacks like:
--   Brute for attacks
+-   Brute force attacks
 -   Buffer overflow
 -   Zero days vulnerabilities
 -   DoS
