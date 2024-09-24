@@ -11,4 +11,9 @@
 ### Use/Misuse Case 3:
 ### Use/Misuse Case 4:
 ### Use/Misuse Case 5:
+### Internal Task Assignments and Collaborations
+#### Project Board
+[CYBR8420-Suricata](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
+#### Individual Contributions
+#### Team Reflection
 ## Part 2
