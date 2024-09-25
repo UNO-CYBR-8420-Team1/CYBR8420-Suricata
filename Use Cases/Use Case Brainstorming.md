@@ -101,6 +101,7 @@ Misuse Case:
 
 *Description**: An adversary anticipates the threat-hunting techniques used by security teams and employs tactics to mimic legitimate user behavior, avoiding detection by Suricata and remaining undetected in the network.
 
+----------
 **Use Case 8: Virtual Machine Traffic Monitoring**
 **Actors:**
 -    Network Administrator
