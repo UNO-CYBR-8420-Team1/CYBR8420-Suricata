@@ -124,8 +124,9 @@ Misuse Case:
   
 *Description**: The Security analyst relies on rules set up on the IDS/IPS to detect troubles. When the IPS/IDS detects one of these rules, Suricata follows the rule setup and alerts the Security Analyst. 
 
-#use case created but need to figure out how to add to doc
-
+#use case created and placed in files
+#see UseCase#9Ben.png
+#updated Use Case Updated Ben #9.png
 
 
 **Misuse Case:** 
@@ -133,6 +134,8 @@ Misuse Case:
 -    Newer Analyst
 -    Suricata IDS/IPS
   
-*Description**: A newer analyst or one that is not as well versed on the system adjusting the rules to alert on a broader range this inevitably causes too many alerts to focus on and burys alerts. 
-(Add misuse case to use case tomorrow)
+*Description**: A newer analyst or one that is not as well versed on the system adjusting the rules to alert on a broader range this inevitably causes too many alerts to focus on and burys alerts. Not all bad actors internal are malicious, lack of knowledge can result in flaws. 
+
+#use case created and placed in files
+#see Misuse:Use Case Update Ben#9.png
 
