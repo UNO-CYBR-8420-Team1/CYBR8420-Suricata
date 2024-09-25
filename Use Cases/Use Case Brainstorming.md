@@ -115,3 +115,24 @@ Misuse Case:
 -    Suricata IDS/IPS
   
 *Description**: A malicious actor studies the IDS/IPS methods of Suricata to gain an understanding of how the features work and what activity generates a reportable anomaly. The malicious actor then uses this knowledge to fine tune their attack vectors, being careful to not execute attack methods nor move laterally between virtual machines in such a manner that would trigger an alert from Suricata.
+
+-----
+**Use Case 9: IDS/IPS Rules Setup**
+**Actors:**
+-    Security Analyst
+-    Suricata IDS/IPS
+  
+*Description**: The Security analyst relies on rules set up on the IDS/IPS to detect troubles. When the IPS/IDS detects one of these rules, Suricata follows the rule setup and alerts the Security Analyst. 
+
+#use case created but need to figure out how to add to doc
+
+
+
+**Misuse Case:** 
+**Actors:**
+-    Rogue Analyst
+-    Suricata IDS/IPS
+  
+*Description**: A rogue analyst adjust the rules to alert on a broader range this inevitably causes too many alerts to focus on and burys import alerts.
+(Add misuse case to use case tomorrow)
+
