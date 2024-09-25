@@ -100,3 +100,14 @@ Misuse Case:
 -   **Suricata IDS/IPS**
 
 *Description**: An adversary anticipates the threat-hunting techniques used by security teams and employs tactics to mimic legitimate user behavior, avoiding detection by Suricata and remaining undetected in the network.
+
+**Use Case 8: Virtual Machine Traffic Monitoring**
+Actors:
+Network Administrator
+Suricata IDS/IPS
+Description*: Suricata's monitoring feature scrutinizes traffic between different virtual machines and logs any anomalies. The Network Adminstrator is notified of the anomalies and inspects Suricata's logs to confirm the suspicious activity or clear the report of any suspicious activity.
+
+Misuse Case: Actors:
+Malicious Actor
+Suricata IDS/IPS
+Description*: A malicious actor studies the IDS/IPS methods of Suricata to gain an understanding of how the features work and what activity generates a reportable anomaly. The malicious actor then uses this knowledge to fine tune their attack vectors, being careful to not execute attack methods nor move laterally between virtual machines in such a manner that would trigger an alert from Suricata.
