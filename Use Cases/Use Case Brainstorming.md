@@ -103,6 +103,7 @@ Misuse Case:
 
 ----------
 **Use Case 8: Virtual Machine Traffic Monitoring**
+
 **Actors:**
 -    Network Administrator
 -    Suricata IDS/IPS
@@ -110,6 +111,7 @@ Misuse Case:
 *Description**: Suricata's monitoring feature scrutinizes traffic between different virtual machines and logs any anomalies. The Network Adminstrator is notified of the anomalies and inspects Suricata's logs to confirm the suspicious activity or clear the report of any suspicious activity.
 
 **Misuse Case:** 
+
 **Actors:**
 -    Malicious Actor
 -    Suricata IDS/IPS
@@ -118,6 +120,7 @@ Misuse Case:
 
 -----
 **Use Case 9: IDS/IPS Rules Setup**
+
 **Actors:**
 -    Security Analyst
 -    Suricata IDS/IPS
@@ -130,12 +133,29 @@ Misuse Case:
 
 
 **Misuse Case:** 
+
 **Actors:**
 -    Newer Analyst
 -    Suricata IDS/IPS
   
-*Description**: A newer analyst or one that is not as well versed on the system adjusting the rules to alert on a broader range this inevitably causes too many alerts to focus on and burys alerts. Not all bad actors internal are malicious, lack of knowledge can result in flaws. 
+*Description**: A newer analyst or one that is not as well versed on the system adjusting the rules to alert on a broader range this inevitably causes too many alerts to focus on and buries alerts. Not all bad actors internally are malicious, lack of knowledge can result in flaws. 
 
 #use case created and placed in files
 #see Misuse:Use Case Update Ben#9.png
 
+------
+**Use Case 10: IP Blocking**
+
+**Actors:**
+- Network Security Engineer
+- Suricata IDS/IPS
+
+*Description*: A Network Security Engineer configures Suricata to automatically block suspicious IP addresses based on predefined threat intelligence feeds. When Suricata identifies a known malicious IP address attempting to connect, it blocks the IP and logs the event.
+
+**Misuse Case:**
+
+**Actors:**
+- Attacker
+- Suricata IDS/IPS
+
+*Description:* An attacker uses IP spoofing techniques to bypass Suricata's IP-based blocking mechanism, making it appear that traffic is coming from a trusted source. This allows the attacker to bypass Suricata's defenses and establish unauthorized connections.
