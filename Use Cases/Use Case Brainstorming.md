@@ -55,6 +55,9 @@ Misuse Case:
 -   **Suricata IDS/IPS**
 
 *Description**: An employee deliberately obfuscates sensitive data (e.g., through encryption or steganography) to evade Suricata's data loss prevention mechanisms, successfully exfiltrating data without triggering alerts.
+
+Shane claims #4.
+
 ----------
 **Use Case 5: Protocol Analysis**
 **Actors**:
