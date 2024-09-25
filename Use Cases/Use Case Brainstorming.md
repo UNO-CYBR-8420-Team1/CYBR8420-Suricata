@@ -130,9 +130,9 @@ Misuse Case:
 
 **Misuse Case:** 
 **Actors:**
--    Rogue Analyst
+-    Newer Analyst
 -    Suricata IDS/IPS
   
-*Description**: A rogue analyst adjust the rules to alert on a broader range this inevitably causes too many alerts to focus on and burys import alerts.
+*Description**: A newer analyst or one that is not as well versed on the system adjusting the rules to alert on a broader range this inevitably causes too many alerts to focus on and burys alerts. 
 (Add misuse case to use case tomorrow)
 
