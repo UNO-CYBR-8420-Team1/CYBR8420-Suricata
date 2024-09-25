@@ -159,3 +159,21 @@ Misuse Case:
 - Suricata IDS/IPS
 
 *Description:* An attacker uses IP spoofing techniques to bypass Suricata's IP-based blocking mechanism, making it appear that traffic is coming from a trusted source. This allows the attacker to bypass Suricata's defenses and establish unauthorized connections.
+
+-----
+**Use Case 11: Reviewing Logs**
+
+**Actors:**
+- Security Analyst
+- Suricata Logs
+
+*Description*: The security analyst relies on the integrity of the logs created by Suricata. As these logs are being stored or analyzed the expectation is that they are not free to be altered.
+
+**Misuse Case:**
+
+**Actors:**
+- Bad Actor
+- Suricata logs
+
+*Description:* A bad actor could be able to adjust the logs locally or while in the process of being sent to SIEM or other security analyzer through man in the middle if not sent/stored through encrypted medium or secured.
+
