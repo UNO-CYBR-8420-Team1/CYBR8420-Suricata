@@ -29,6 +29,14 @@ One recent feature addition is the EVE JSON output, which provides detailed logs
 
 The Suricata project is continuously evolving with regular/recent [security patches and updates](https://suricata.io/category/release/). The development team maintains an active changelog to track all known vulnerabilities, mitigations, and feature upgrades, ensuring that Suricata remains a reliable and secure network monitoring solution. 
 
+# Hypothetical Operational Environment: Healthcare System
+
+For our project we have chosen to use the healthcare system as Suricata hypothetical operational environment which consists of hospitals, clinics, and remote health facilities. The healthcare system relies heavily on interconnected electronic health record (EHR) systems, cloud-based medical applications, and networked medical devices like infusion pumps, patient monitors, and imaging systems to provide critical care to patients. In this environment, Suricata plays a key role in monitoring network traffic, detecting anomalies, and safeguarding sensitive data.
+
+One of the most critical components in this healthcare system is the electronic health record (EHR) system, which stores a vast amount of sensitive patient data, including medical histories, prescriptions, lab results, and personal information. Additionally, various medical devices, such as imaging equipment and heart monitors, are connected to the network, making them potential targets for cyberattacks. Remote access systems for telehealth consultations and patient monitoring further expand the network’s vulnerability, as physicians and healthcare staff need secure ways to access patient data from different locations.
+
+In this environment, security needs are focused on protecting patient data privacy and ensuring compliance with regulations such as HIPAA (Health Insurance Portability and Accountability Act). There is also a need for constant network monitoring to detect unauthorized access or suspicious activities that could compromise patient data or disrupt the hospital's medical devices. Suricata is crucial in identifying and preventing potential intrusions, such as attempts to manipulate patient records, alter prescriptions, or tamper with the hospital's connected medical equipment.
+
 # Perceived Threats by Users
 Attackers could try to breach the network with common attacks like:
 -   Brute force attacks
