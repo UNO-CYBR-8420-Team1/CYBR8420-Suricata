@@ -177,3 +177,20 @@ Misuse Case:
 
 *Description:* A bad actor could be able to adjust the logs locally or while in the process of being sent to SIEM or other security analyzer through man in the middle if not sent/stored through encrypted medium or secured.
 
+-----
+**Use Case 12: Accessing Suricata**
+
+**Actors:**
+- Security Analyst
+- Network Administrator
+- Suricata IDS/IPS
+
+*Description*: The security analyst/network administrator accesses Suricata via a CLI interface with no user/login prompts to add/edit/delete rules.
+
+**Misuse Case:**
+
+**Actors:**
+- Unauthorized/malicious client on network with knowledge of Suricata
+- Suricata IDS/IPS
+
+*Description:* Suricata does not utilize any sort of login/authentication methods, so an unauthorized/malicious client with technical knowledge of CLI-based IDS/IPS instances could disable Suricata.
