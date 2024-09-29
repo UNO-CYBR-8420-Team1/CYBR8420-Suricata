@@ -1,5 +1,5 @@
 
-**Use Case 1: Network Traffic Monitoring**
+**Use Case 1: Log Analysis and Manipulation**
 **Actors**:
 -   **Network Administrator**
 -   **Suricata IDS/IPS**
