@@ -4,16 +4,16 @@
 -   **Network Administrator**
 -   **Suricata IDS/IPS**
 
-*Description**: The Network Administrator uses Suricata to monitor all incoming and outgoing network traffic. Alerts are generated for unusual patterns, such as unexpected spikes in traffic or unusual access attempts.
+*Description**: The Network Administrator uses Suricata to monitor all incoming and outgoing network traffic. Alerts are generated for unusual patterns, such as unexpected spikes in traffic or unusual access attempts. This lets the Network Admin identify potential security breaches for investigation
 
 Misuse Case:
 **Actors**:
--   **Malicious Insider**
+-   **Hacker Searching Medical Records**
 -   **Suricata IDS/IPS**
 
-*Description**: A malicious insider manipulates or disables Suricata monitoring to cover their tracks while exfiltrating sensitive data or engaging in unauthorized activities.
+*Description**: A malicious hacker gains access to the network. Instead of targeting the highly confidential files and systems directly, he manipulates the logging files of Suricata by overwriting them (potentially with a rogue installation of Suricata itself to hide his tracks from Suricata monitoring to cover their tracks while exfiltrating sensitive data or engaging in unauthorized activities.
 
-Nathan claims this one .... will add diagram...
+Assigned: Nathan Stechschulte
 
 ----------
 **Use Case 2: Malware Detection**
