@@ -32,7 +32,7 @@ The documentation also talks about balancing detection accuracy with performance
 
 For instance, it could include steps for securing configuration files to stop tampering, using guidelines that fit specific healthcare environments for protecting file access, and using secure protocols (like TLS) for remote management of medical data. Also, adding tips on securing Suricata's management interfaces and applying least-privilege access models for critical healthcare functions would help improve security in actual operational settings.
 
-- **Suricata Configuration Guide:** [Link to Suricata's Configuration Documentation](https://suricata.readthedocs.io/en/latest/configuration/index.html)
+- **Suricata Configuration Guide:** [Suricata's Configuration Documentation](https://suricata.readthedocs.io/en/latest/configuration/index.html)
 
 ## 3. **Logging and Alerts**
 
@@ -46,7 +46,7 @@ Suricata could aslo encourage the use of **digital signatures** for logs, which 
 
 By enhancing logging integrity, Suricata would not only ensure the performance and reliability of its alerting mechanism but also provide robust protection for mission-critical environments like healthcare.
 
-- **Suricata Logging Guide:** [Link to Suricata's Logging Documentation](https://suricata.readthedocs.io/en/latest/output/index.html)
+- **Suricata Logging Guide:** [Suricata's Logging Documentation](https://suricata.readthedocs.io/en/latest/output/index.html)
 
 #### 4. **Rule Management**
 
@@ -66,7 +66,7 @@ To prevent these types of attacks, the hospital's Security Operations Center (SO
 
 By adding these security measures into Suricata's rule management, hospitals can better protect against attacks and insider threats, keeping critical healthcare systems and patient information safe from tampering.
 
-- **Suricata Rule Management Guide:** [Link to Suricata's Rule Management Documentation](https://suricata.readthedocs.io/en/latest/rules/index.html)
+- **Suricata Rule Management Guide:** [Suricata's Rule Management Documentation](https://suricata.readthedocs.io/en/latest/rules/index.html)
 
 
 
