@@ -167,7 +167,7 @@ Misuse Case:
 - Security Analyst
 - Suricata Logs
 
-*Description*: The hospital security anaylst practicies anomaly detection and mitigation efforts to proactively, reactively, and retroactively stop a threat in it's tracks. The analyst has the ability to mitigate these troubles through traffic scrubbing, SIEM integration, load balancing, and reviewing logs. These efforts can be utilized to stop a Distributed Denial of Service (DDOS) attack.
+*Description*: Hospitals are known for their critical devices and data including Personable Identifiable Information or (PII) and health records. The hospital security anaylsts practice anomaly detection and mitigation efforts to proactively, reactively, and retroactively stop a threat in it's tracks. The analyst has the ability to mitigate these troubles through traffic scrubbing, SIEM integration, load balancing, and reviewing logs. These efforts are utilized to stop a Distributed Denial of Service (DDOS) attack among other attacks.
 
 **Misuse Case:**
 
@@ -175,7 +175,7 @@ Misuse Case:
 - Disgruntled Patient
 - Suricata logs
 
-*Description:* A disgruntled patient that may be upset with the provider or system as a whole causes a Distributed Denial of Service (DDOS) attack that causes legitimate alerts to get missed, system hardware performance issues and alert fatigue due to flood of requests and erroneous data.
+*Description:* A disgruntled patient that may be upset with the provider or system as a whole causes a Distributed Denial of Service (DDOS) attack that causes legitimate alerts to get missed, system hardware performance issues and alert fatigue due to flood of requests and erroneous data. The patient is looking to get even in this malicious way.
 
 -----
 **Use Case 12: Accessing Suricata**
