@@ -161,21 +161,21 @@ Misuse Case:
 *Description:* An attacker uses IP spoofing techniques to bypass Suricata's IP-based blocking mechanism, making it appear that traffic is coming from a trusted source. This allows the attacker to bypass Suricata's defenses and establish unauthorized connections.
 
 -----
-**Use Case 11: Reviewing Logs**
+**Use Case 11: Anomaly Detection and Mitigation**
 
 **Actors:**
 - Security Analyst
 - Suricata Logs
 
-*Description*: The security analyst relies on the integrity of the logs created by Suricata. As these logs are being stored or analyzed the expectation is that they are not free to be altered.
+*Description*: The hospital security anaylst practicies anomaly detection and mitigation efforts to proactively, reactively, and retroactively stop a threat in it's tracks. The analyst has the ability to mitigate these troubles through traffic scrubbing, SIEM integration, load balancing, and reviewing logs. These efforts can be utilized to stop a Distributed Denial of Service (DDOS) attack.
 
 **Misuse Case:**
 
 **Actors:**
-- Bad Actor
+- Disgruntled Patient
 - Suricata logs
 
-*Description:* A bad actor could be able to adjust the logs locally or while in the process of being sent to SIEM or other security analyzer through man in the middle if not sent/stored through encrypted medium or secured.
+*Description:* A disgruntled patient that may be upset with the provider or system as a whole causes a Distributed Denial of Service (DDOS) attack that causes legitimate alerts to get missed, system hardware performance issues and alert fatigue due to flood of requests and erroneous data.
 
 -----
 **Use Case 12: Accessing Suricata**
