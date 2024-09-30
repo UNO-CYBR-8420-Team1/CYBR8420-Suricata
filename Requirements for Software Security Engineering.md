@@ -7,7 +7,7 @@
 - Grace Evah Nzoughe
 - Matthew Popelka
 ## Part 1
-### Use/Misuse Case 1: Intrusion Detection System with DDoS
+### Use/Misuse Case 1: Anomaly Detection and Mitigation with DDoS
 - Diagram
 - Written Summary
 ### Use/Misuse Case 2: User Authentication and Access Control
