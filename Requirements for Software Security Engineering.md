@@ -98,14 +98,6 @@ Here's how we split the responsibilities to create initial drafts:
 - An AI prompt our team used to improve usecase and misuce case: 
 - Combining Document: Everyone, helping to place portions of the project on where they needed to go such as the diagrams, misuse cases and reasoning.
 - 
-#### Team Reflection
-
-The biggest issue we had was getting familiar with Suricata and being aware with it's functionality to come up with use and misuse cases that didn't overlap. We also struggled to understand the difference between a "feature" and an "activity". 
-
-Surprisingly one unexpected issue came when one of our team members used a MAC OS to commit a file to our GITHUB repo that broke anyone else with Windows (because he used invalid characters in the filename). We took advantage of the GIT project "issue" feature to report this and of course discord. It was a learning expierence for everyone, as we normally don't think too much about the other environments others work in and the limitation as a result. 
-
-We did a much better job this time staying pro-active and trying to get ahead of our commitments. We were all able to meet now that we had some times figured out to meet and got more comfortable disussing with each other. Initially there was some confusion on keeping up with commits when working on the project to stay within github vs utilizing OneDrive as a team and then having a designated contributor commit the teams total commits to the repository. We did not see that explict requirement that activity would be monitored for the proposal phase so we used OneDrive to put together the documentation, review each other's work and iterate on the commitments. This time we went forth with understanding that commits need to be applied to the github repository to show full team participation publicly since OneDrive didn't display that which inevitably would push contributors to be more active and not have a single documentor.
-
 
 
 ## Part 2 - Review of Suricata Project Documentation for Security-Related Configuration and Installation Issues
@@ -159,3 +151,12 @@ To prevent these types of attacks, the hospital's Security Operations Center (SO
 By adding these security measures into Suricata's rule management, hospitals can better protect against attacks and insider threats, keeping critical healthcare systems and patient information safe from tampering.
 
 - **Suricata Rule Management Guide:** [Suricata's Rule Management Documentation](https://suricata.readthedocs.io/en/latest/rules/index.html)
+
+
+#### Team Reflection
+
+The biggest issue we had was getting familiar with Suricata and being aware with it's functionality to come up with use and misuse cases that didn't overlap. We also struggled to understand the difference between a "feature" and an "activity". 
+
+Surprisingly one unexpected issue came when one of our team members used a MAC OS to commit a file to our GITHUB repo that broke anyone else with Windows (because he used invalid characters in the filename). We took advantage of the GIT project "issue" feature to report this and of course discord. It was a learning expierence for everyone, as we normally don't think too much about the other environments others work in and the limitation as a result. 
+
+We did a much better job this time staying pro-active and trying to get ahead of our commitments. We were all able to meet now that we had some times figured out to meet and got more comfortable disussing with each other. Initially there was some confusion on keeping up with commits when working on the project to stay within github vs utilizing OneDrive as a team and then having a designated contributor commit the teams total commits to the repository. We did not see that explict requirement that activity would be monitored for the proposal phase so we used OneDrive to put together the documentation, review each other's work and iterate on the commitments. This time we went forth with understanding that commits need to be applied to the github repository to show full team participation publicly since OneDrive didn't display that which inevitably would push contributors to be more active and not have a single documentor.
