@@ -2,7 +2,7 @@
 # Requirements for Software Security Engineering
 ## Part 1
 ### Use/Misuse Case 1: Anomaly Detection and Mitigation with DDoS
-- Diagram
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseMisuseFinal%231.drawio.png)
 - Written Summary
 ### Use/Misuse Case 2: User Authentication and Access Control
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/Auth-AccessControlUseMisuseCase2.png)
