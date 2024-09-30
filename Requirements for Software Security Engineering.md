@@ -64,6 +64,9 @@ The remaining output generated pertained to the misuse that could occur with the
 
 ### Security Requirements Derived from Misuse Case Analysis
 - **Todo:** Build a list of security requirements derived from misuse case analysis. (Compile a list from our respective cases)
+  
+ Based on our use/misuse case analyses to secure increase Suricata's security requirements, strict **access control** must be enforced, allowing only authorized personnel to modify or update rule files. This should be complemented by **multi-factor authentication (MFA)** for all administrative access to ensure an additional layer of protection against unauthorized logins. To safeguard the integrity of rule updates, **strong cryptographic hashes** must be used for verification, and all rule sets should be **digitally signed** to prevent tampering. Since suricata does not have any **role-based access control (RBAC)**, implementing it ensures that access to critical rule management tasks is restricted based on user roles and privileges, minimizing potential misuse.
+
 ### Alignment of Security Derived Security Requirements
 - **Todo:** Assess the alignment of security requirements derived from misuse case analysis with advertised features of the open-source software. Review OSS project documentation and codebase to support your observations. Provide a summary of your findings, reflecting on the sufficiency of security features offered by the open source project versus those expected by the mis use case analysis.
 ### Internal Task Assignments and Collaborations
