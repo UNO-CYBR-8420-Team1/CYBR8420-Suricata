@@ -8,7 +8,7 @@
 - Diagram
 - Written Summary
 ### Use/Misuse Case 3: Intrusion Preventing System
-- Diagram
+![Case3](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseMisuseFinal%233.drawio.png)
 - Written Summary
 ### Use/Misuse Case 4: Log Analysis and Manipulation
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseCase1-Log-Analysis-And-Manipulation.drawio.png)
