@@ -86,6 +86,8 @@ From misuse case #4 we should make sure the logging system used is secure from t
 ### Alignment of Security Derived Security Requirements
 - **Todo:** Assess the alignment of security requirements derived from misuse case analysis with advertised features of the open-source software. Review OSS project documentation and codebase to support your observations. Provide a summary of your findings, reflecting on the sufficiency of security features offered by the open source project versus those expected by the mis use case analysis.
 
+- Suricata doesn’t explicitly say it is a DDOS tool but it has rules that can be used to detect and limit them. Suricata used in conjunction with other log analyzers such as SIEM can help detect DDOS activity and mitigate them / understand patterns. An example from Suricata documentation would be Performance Analysis for System Load (https://docs.suricata.io/en/latest/performance/analysis.html) utilizing this tool within Suricata can help the user understand system load and if performance isn’t normal. The sufficiency of security features provided in the OSS project are decent for a basic use but when used with other systems especially for a larger organization such as a hospital can make it key for finding patterns, trends, and other helpful information.
+
 ## Part 2 - Review of Suricata Project Documentation for Security-Related Configuration and Installation Issues
 
 To review Suricata's security-related documentation, we looked at the project's official documentation for installation and configuration, particularly focusing on sections related to security. Here's a summary of our observations, along with suggestions for improvement:
