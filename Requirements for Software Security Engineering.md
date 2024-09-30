@@ -24,6 +24,7 @@ Adding an authentication mechanism to access Suricata is the most straightforwar
 - 
 ### Use/Misuse Case 4: Log Analysis and Manipulation
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseCase1-Log-Analysis-And-Manipulation.drawio.png)
+
 **Description:** The Network Administrator uses Suricata to monitor all incoming and outgoing network traffic. Alerts are generated for unusual patterns, such as unexpected spikes in traffic or unusual access attempts. This lets the Network Admin identify potential security breaches for investigation. 
 
 **Misuse Case Description:** A malicious hacker gains access to the network. Instead of targeting the highly confidential files for medical records, he manipulates the logging files of Suricata by overwriting them  to hide his tracks from Suricata monitoring to cover their tracks while exfiltrating sensitive data or engaging in unauthorized activities. This bypasses any tampering with the alarm definitions or overloading the system with a denial of service attack. The reason the hacker wants to manipulate the logs is to prevent getting caught. 
