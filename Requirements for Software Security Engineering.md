@@ -95,8 +95,8 @@ Here's how we split the responsibilities to create initial drafts:
 -- Use/Misuse Case 3: Intrusion Preventing System: Shane
 -- Use/Misuse Case 4: Log Analysis and Manipulation: Nathan
 -- Use/Misuse Case 5: Rule Configuration Management: Grace
-- An AI prompt our team used to improve usecase and misuce case: PROVIDE EXAMPLE SCREENSHOT OF CASE THAT HELPED
-- Combining Document: 
+- An AI prompt our team used to improve usecase and misuce case: 
+- Combining Document: Everyone, helping to place portions of the project on where they needed to go such as the diagrams, misuse cases and reasoning.
 - 
 #### Team Reflection
 
