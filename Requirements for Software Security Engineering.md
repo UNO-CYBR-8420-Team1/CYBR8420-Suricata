@@ -31,24 +31,24 @@ Outside Suricata, some good data protection practices such as the [3-2-1 backup 
 ### Internal Task Assignments and Collaborations
 #### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
 #### Individual Contributions
-Here's how we split responsibilities to create initial drafts:
+Here's how we split the responsibilities to create initial drafts:
 - GITHUB Project: Nathan had created this already, Shane helped flush out our activities and assign them out
-- Use Cases: Entire team contributed to the Use Case Brainstorm document to gather ideas. We then defined out to each individual:
--- Use/Misuse Case 1: Intrusion Detection System with DDoS: Ben
+- Use Cases: The entire team contributed to the Use Case Brainstorm document to gather ideas, we then identified our five and split them up and reviewed as follows:
+-- Use/Misuse Case 1: Anomaly Detection and Mitigation with DDoS: Ben
 -- Use/Misuse Case 2: User Authentication and Access Control: Matt
 -- Use/Misuse Case 3: Intrusion Preventing System: Shane
 -- Use/Misuse Case 4: Log Analysis and Manipulation: Nathan
 -- Use/Misuse Case 5: TBD: Grace
-- AI Prompting: Shane took a lead on AI prompting to refine his use case
+- An AI prompt our team used to improve usecase and misuce case: PROVIDE EXAMPLE SCREENSHOT OF CASE THAT HELPED
 - Combining Document: 
 - 
 #### Team Reflection
 
-The biggest issue we had was getting familiar with Suricata and being aware with it's functionality to come up with use cases and misuse cases that didn't overlap. We also struggled to understand the difference between a "feature" and an "activity". 
+The biggest issue we had was getting familiar with Suricata and being aware with it's functionality to come up with use and misuse cases that didn't overlap. We also struggled to understand the difference between a "feature" and an "activity". 
 
-Surprisingly one unexpected issue came when one of our team members used a mac to commit a file to our GITHUB repo that broke anyone else with Windows (because he used invalid characters in the filename). We took advantage of the GIT project "issue" feature to report this and of course discord. It was a learning expierence for everyone, as we normally don't think too much about the other environments others work in and the limitation as a result. 
+Surprisingly one unexpected issue came when one of our team members used a MAC OS to commit a file to our GITHUB repo that broke anyone else with Windows (because he used invalid characters in the filename). We took advantage of the GIT project "issue" feature to report this and of course discord. It was a learning expierence for everyone, as we normally don't think too much about the other environments others work in and the limitation as a result. 
 
-We did a much better job this time staying pro-active and trying to get ahead of our commitments. We were all able to meet now that we had some times figure out to meet and got more comfortable disussing with each other. We did get frustrated on the feedback of activity in GITHUB being a source of confusion. We did not see explict requirements that activity would be monitored for the proposal phase so we used OneDrive to put together the documentation, review each other's work and iterate on the commitments. 
+We did a much better job this time staying pro-active and trying to get ahead of our commitments. We were all able to meet now that we had some times figured out to meet and got more comfortable disussing with each other. Initially there was some confusion on keeping up with commits when working on the project to stay within github vs utilizing OneDrive as a team and then having a designated contributor commit the teams total commits to the repository. We did not see that explict requirement that activity would be monitored for the proposal phase so we used OneDrive to put together the documentation, review each other's work and iterate on the commitments. This time we went forth with understanding that commits need to be applied to the github repository to show full team participation publicly since OneDrive didn't display that which inevitably would push contributors to be more active and not have a single documentor.
 
 
 
