@@ -21,12 +21,14 @@ Adding an authentication mechanism to access Suricata is the most straightforwar
 ### Use/Misuse Case 3: Intrusion Preventing System
 ![Case3](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseMisuseFinal%233.drawio.png)
 - Written Summary
+- 
 ### Use/Misuse Case 4: Log Analysis and Manipulation
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseCase1-Log-Analysis-And-Manipulation.drawio.png)
 **Description:** The Network Administrator uses Suricata to monitor all incoming and outgoing network traffic. Alerts are generated for unusual patterns, such as unexpected spikes in traffic or unusual access attempts. This lets the Network Admin identify potential security breaches for investigation. 
+
 **Misuse Case Description:** A malicious hacker gains access to the network. Instead of targeting the highly confidential files for medical records, he manipulates the logging files of Suricata by overwriting them  to hide his tracks from Suricata monitoring to cover their tracks while exfiltrating sensitive data or engaging in unauthorized activities. This bypasses any tampering with the alarm definitions or overloading the system with a denial of service attack. The reason the hacker wants to manipulate the logs is to prevent getting caught. 
 
-The real focus here is on the manipulation of the source logs itself and how that can impact the downstream alerting process - making that whole feature and the feature that rely on them useless. The manipulation can hide his actions in the most simple form, or cause "wild goose chases" by just changing the details. Since the software is open-source, if an unauthorized individual got access to the log files themselves they would know where to find them and manipulate them. 
+**Extended Thoughts:** The real focus here is on the manipulation of the source logs itself and how that can impact the downstream alerting process - making that whole feature and the feature that rely on them useless. The manipulation can hide his actions in the most simple form, or cause "wild goose chases" by just changing the details. Since the software is open-source, if an unauthorized individual got access to the log files themselves they would know where to find them and manipulate them. 
 
 Outside Suricata, some good data protection practices such as the [3-2-1 backup strategy](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) to replicate the logs for security practices would help defend against this attack (of course, pending implementation). Further more, adding a layer of automatic log comparison to detect log tampering would help not just prevent this, but identify it.  
 
@@ -83,7 +85,7 @@ Here's how we split the responsibilities to create initial drafts:
 -- Use/Misuse Case 2: User Authentication and Access Control: Matt
 -- Use/Misuse Case 3: Intrusion Preventing System: Shane
 -- Use/Misuse Case 4: Log Analysis and Manipulation: Nathan
--- Use/Misuse Case 5: Rule Configuration Management
+-- Use/Misuse Case 5: Rule Configuration Management: Grace
 - An AI prompt our team used to improve usecase and misuce case: PROVIDE EXAMPLE SCREENSHOT OF CASE THAT HELPED
 - Combining Document: 
 - 
