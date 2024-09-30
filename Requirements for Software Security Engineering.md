@@ -26,8 +26,8 @@ The real focus here is on the manipulation of the source logs itself and how tha
 
 Outside Suricata, some good data protection practices such as the [3-2-1 backup strategy](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) to replicate the logs for security practices would help defend against this attack (of course, pending implementation). Further more, adding a layer of automatic log comparison to detect log tampering would help not just prevent this, but identify it.  
 
-### Use/Misuse Case 5:
-- Diagram
+### Use/Misuse Case 5: Rule configuration Management
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/Rule%20management%20modified.drawio.png)
   
 **Description:**
 In an healthcare environment, insurance fraudsters aim to access sensitive patient records and insurance details to file fraudulent claims or manipulate medical billing for financial gain. The fraudsters target Suricata to reach their goal.
@@ -64,6 +64,9 @@ The remaining output generated pertained to the misuse that could occur with the
 
 ### Security Requirements Derived from Misuse Case Analysis
 - **Todo:** Build a list of security requirements derived from misuse case analysis. (Compile a list from our respective cases)
+  
+ Based on our use/misuse case analyses to secure increase Suricata's security requirements, strict **access control** must be enforced, allowing only authorized personnel to modify or update rule files. This should be complemented by **multi-factor authentication (MFA)** for all administrative access to ensure an additional layer of protection against unauthorized logins. To safeguard the integrity of rule updates, **strong cryptographic hashes** must be used for verification, and all rule sets should be **digitally signed** to prevent tampering. Since suricata does not have any **role-based access control (RBAC)**, implementing it ensures that access to critical rule management tasks is restricted based on user roles and privileges, minimizing potential misuse.
+
 ### Alignment of Security Derived Security Requirements
 - **Todo:** Assess the alignment of security requirements derived from misuse case analysis with advertised features of the open-source software. Review OSS project documentation and codebase to support your observations. Provide a summary of your findings, reflecting on the sufficiency of security features offered by the open source project versus those expected by the mis use case analysis.
 ### Internal Task Assignments and Collaborations
