@@ -28,7 +28,22 @@ Outside Suricata, some good data protection practices such as the [3-2-1 backup 
 
 ### Use/Misuse Case 5:
 - Diagram
-- Written Summary
+  
+**Description:**
+- The system administrator, responsible for maintaining the security and rule sets of Suricata, is tasked with managing the installation, updating, and validation of Suricata rules. These rules help in identifying and mitigating potential threats detected by Suricata.
+- The administrator installs a new set of rules into Suricata. After the rules are installed, they are validated to ensure they’re working properly within the system.
+- An attacker tries to intercept the rule files during installation. They aim to modify the rules, either by weakening them (ex: making Suricata ignore specific types of traffic) or injecting malicious code.
+- To mitigate the risk, the administrator implements digital signatures for rule files. This ensures that any rule file installed is verified as legitimate and has not been altered.
+- In response to the digital signature implementation, the attacker focuses on compromising the key used to sign rule files, allowing them to sign malicious updates as if they were legitimate.
+- The administrator performs regular updates to the rule sets to ensure they stay current and can detect the latest threats. Each update is validated through an integrity verification process.
+- An attacker targets the update process, injecting malicious rules that allow them to bypass certain protections, such as disabling detection of malicious traffic or creating backdoors.
+- The system uses integrity verification mechanisms, like checksums and cryptographic hashes, to ensure that rule updates haven’t been tampered with. And this check happens before Suricata applies the updated rules.
+- After updating and installing rules, the administrator runs the validation process to ensure Suricata is functioning correctly and following the rules as expected.
+- The attacker tries to perform a man-in-the-middle attack by intercepting the communications between the server and the admin, attempting to impersonate either side to manipulate the outcome of the rule validation process.
+
+
+
+  
 ### Utilization of AI for Improving Use/Misuse Case Diagrams
 - **Todo:** With appropriate prompting, AI can help enhance intitial versions of usecase and mis usecase diagrams. Here is a prompt that I used for the sample login use case to check if I missed any major mis use cases. Share a prompt that your team used to improve usecase and misuse case diagrams and reflect on it usefulness to improve your diagrams.
 ### Security Requirements Derived from Misuse Case Analysis
