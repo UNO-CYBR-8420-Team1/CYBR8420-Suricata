@@ -86,21 +86,6 @@ From misuse case #4 we should make sure the logging system used is secure from t
 
 ### Alignment of Security Derived Security Requirements
 - **Todo:** Assess the alignment of security requirements derived from misuse case analysis with advertised features of the open-source software. Review OSS project documentation and codebase to support your observations. Provide a summary of your findings, reflecting on the sufficiency of security features offered by the open source project versus those expected by the mis use case analysis.
-### Internal Task Assignments and Collaborations
-#### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
-#### Individual Contributions
-Here's how we split the responsibilities to create initial drafts:
-- GITHUB Project: Nathan had created this already, Shane helped flush out our activities and assign them out
-- Use Cases: The entire team contributed to the Use Case Brainstorm document to gather ideas, we then identified our five and split them up and reviewed as follows:
--- Use/Misuse Case 1: Anomaly Detection and Mitigation with DDoS: Ben
--- Use/Misuse Case 2: User Authentication and Access Control: Matt
--- Use/Misuse Case 3: Intrusion Preventing System: Shane
--- Use/Misuse Case 4: Log Analysis and Manipulation: Nathan
--- Use/Misuse Case 5: Rule Configuration Management: Grace
-- An AI prompt our team used to improve usecase and misuce case: 
-- Combining Document: Everyone, helping to place portions of the project on where they needed to go such as the diagrams, misuse cases and reasoning.
-- 
-
 
 ## Part 2 - Review of Suricata Project Documentation for Security-Related Configuration and Installation Issues
 
@@ -154,9 +139,24 @@ By adding these security measures into Suricata's rule management, hospitals can
 
 - **Suricata Rule Management Guide:** [Suricata's Rule Management Documentation](https://suricata.readthedocs.io/en/latest/rules/index.html)
 
+## Internal Task Assignments and Collaborations
 
-#### Team Reflection
+### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
 
+### Individual Contributions
+Here's how we split the responsibilities to create initial drafts:
+- GITHUB Project: Nathan had created this already, Shane helped flush out our activities and assign them out
+- Use Cases: The entire team contributed to the Use Case Brainstorm document to gather ideas, we then identified our five and split them up and reviewed as follows:
+  - Use/Misuse Case 1: Anomaly Detection and Mitigation with DDoS: Ben
+  - Use/Misuse Case 2: User Authentication and Access Control: Matt
+  - Use/Misuse Case 3: Intrusion Preventing System: Shane
+  - Use/Misuse Case 4: Log Analysis and Manipulation: Nathan
+  - Use/Misuse Case 5: Rule Configuration Management: Grace
+- An AI prompt our team used to improve usecase and misuce case: 
+- Combining Document: Everyone, helping to place portions of the project on where they needed to go such as the diagrams, misuse cases and reasoning.
+- 
+
+### Team Reflection
 The biggest issue we had was getting familiar with Suricata and being aware with it's functionality to come up with use and misuse cases that didn't overlap. We also struggled to understand the difference between a "feature" and an "activity". Additionally, trying to not overcomplicate things seemed like it was going to be tough to add a lot of stuff but ended up finding out it actually wasn't as hard as anticipated. The goal of the diagrams coming from more technical backgrounds than the users the diagrams may be presented to in theory proved that we needed to keep things not as noisy / complicated so readability was easy for customer. A diagram that has too many moving parts can really distract from what is trying to be explained so it is imporant to be concise but still detailed. 
 
 Surprisingly one unexpected issue came when one of our team members used a MAC OS to commit a file to our GITHUB repo that broke anyone else with Windows (because he used invalid characters in the filename). We took advantage of the GIT project "issue" feature to report this and of course discord. It was a learning expierence for everyone, as we normally don't think too much about the other environments others work in and the limitation as a result. 
