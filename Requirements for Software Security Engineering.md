@@ -6,7 +6,14 @@
 - Written Summary
 ### Use/Misuse Case 2: User Authentication and Access Control
 - Diagram
-- Written Summary
+**Description:** The Network Administrator or Security Analyst accesses Suricata to view activity logs and add, remove, or view existing rules for Suricata’s Intruder Detection and Intrusion Prevention Systems (IDS/IPS). Suricata is running on a host system in the hospital’s network. It takes input from users via command line interface (CLI), and it does not have a user authentication page.
+
+**Misuse Case Description:** A Malicious Actor associates to the hospital’s network via an open, unsecured network. Once on the network, the actor traces the data path back to the network’s Suricata instance and determines that no login credentials are required to access Suricata. The actor is also familiar with the proper CLI syntax to add, edit, and remove rules from Suricata. Using this knowledge with the lack of user authentication, the actor successfully accesses Suricata and can change any rules to circumvent Suricata’s intended functionality. From the unintentional standpoint, a tech-savvy client authenticates to the hospital’s internal network and manages to access Suricata. Since Suricata does not have any user authentication practices, the client has immediate access to Suricata and can send inputs to Suricata that adjust IDS/IPS settings.
+
+The issue highlighted here is the lack of user authentication natively provided by Suricata. By itself, Suricata is CLI-based, so no user interface component exists and, therefore, no login screen is present. From the CLI, no user authentication exists. This means that anyone who knows the location of the Suricata instance on a network (or who might stumble upon the location of Suricata) can make changes to Suricata’s rules that govern its network monitoring. 
+
+Adding an authentication mechanism to access Suricata is the most straightforward solution to this issue. One way of doing this is by developing user authentication functionality to Suricata. This could be managed within the Suricata instance, by an authentication server located on the network Suricata protects, or by deploying Suricata within a container and implementing proper security controls to that container. Another solution to enhance access control to Suricata is by properly segmenting and securing guest networks from internal networks. This would prevent a tech-savvy client from randomly discovering the Suricata instance (or other sensitive data) on the internal network.
+
 ### Use/Misuse Case 3: Intrusion Preventing System
 ![Case3](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseMisuseFinal%233.drawio.png)
 - Written Summary
