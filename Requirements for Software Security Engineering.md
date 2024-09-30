@@ -27,7 +27,7 @@ Adding an authentication mechanism to access Suricata is the most straightforwar
 Utilizing an audit logging mechanism addresses part of the misuse issue with respect to Suricata's operation as that provides insight into activity from the IPS to prevent potential malicious IPS rule manipulation. Additional mechanisms that could further seek to address the issue include methods of authentication or access roles for further specification as to who may access the system for unauthorized access prevention. Providing stricter security measure on logging and alerting mechanisms could help to prevent misusers from viewing network activity from Suricata.
 
 ### Use/Misuse Case 4: Log Analysis and Manipulation
-![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseCase1-Log-Analysis-And-Manipulation.drawio.png)
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/Log-Analysis-And-Manipulation-UseCase.jpg)
 
 **Description:** The Network Administrator uses Suricata to monitor all incoming and outgoing network traffic. Alerts are generated for unusual patterns, such as unexpected spikes in traffic or unusual access attempts. This lets the Network Admin identify potential security breaches for investigation. 
 
