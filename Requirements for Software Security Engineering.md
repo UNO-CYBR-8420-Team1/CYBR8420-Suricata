@@ -29,6 +29,12 @@ Outside Suricata, some good data protection practices such as the [3-2-1 backup 
 ### Use/Misuse Case 5:
 - Diagram
 - Written Summary
+### Utilization of AI for Improving Use/Misuse Case Diagrams
+- **Todo:** With appropriate prompting, AI can help enhance intitial versions of usecase and mis usecase diagrams. Here is a prompt that I used for the sample login use case to check if I missed any major mis use cases. Share a prompt that your team used to improve usecase and misuse case diagrams and reflect on it usefulness to improve your diagrams.
+### Security Requirements Derived from Misuse Case Analysis
+- **Todo:** Build a list of security requirements derived from misuse case analysis. (Compile a list from our respective cases)
+### Alignment of Security Derived Security Requirements
+- **Todo:** Assess the alignment of security requirements derived from misuse case analysis with advertised features of the open-source software. Review OSS project documentation and codebase to support your observations. Provide a summary of your findings, reflecting on the sufficiency of security features offered by the open source project versus those expected by the mis use case analysis.
 ### Internal Task Assignments and Collaborations
 #### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
 #### Individual Contributions
