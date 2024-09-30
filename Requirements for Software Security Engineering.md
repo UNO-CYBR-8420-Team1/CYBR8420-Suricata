@@ -26,8 +26,8 @@ The real focus here is on the manipulation of the source logs itself and how tha
 
 Outside Suricata, some good data protection practices such as the [3-2-1 backup strategy](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) to replicate the logs for security practices would help defend against this attack (of course, pending implementation). Further more, adding a layer of automatic log comparison to detect log tampering would help not just prevent this, but identify it.  
 
-### Use/Misuse Case 5:
-- Diagram
+### Use/Misuse Case 5: Rule configuration Management
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/Rule%20management%20modified.drawio.png)
   
 **Description:**
 In an healthcare environment, insurance fraudsters aim to access sensitive patient records and insurance details to file fraudulent claims or manipulate medical billing for financial gain. The fraudsters target Suricata to reach their goal.
