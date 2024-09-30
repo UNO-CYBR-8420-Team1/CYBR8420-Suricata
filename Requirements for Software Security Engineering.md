@@ -154,7 +154,11 @@ Here's how we split the responsibilities to create initial drafts:
   - Use/Misuse Case 5: Rule Configuration Management: Grace
 - An AI prompt our team used to improve usecase and misuce case: 
 - Combining Document: Everyone, helping to place portions of the project on where they needed to go such as the diagrams, misuse cases and reasoning.
-- 
+
+ 
+Ben -
+ My individual contributions include brainstorming ideas for use / mise cases, preparing diagrams for those while working with team members to hone in on our top 5 choices. In addition to that I provided feedback to teammates on areas to improve for diagram, grammar, and normal cleanup. I contributed #1 for Use/Misuse case along with security requirements derived from #1 misuse case. I also worked on the team reflection portion of the project while also continuing to take on my role to help facilitate time with the professor, project timeline and communication.
+ My teamwork for this project seemed to feel a little more fluid and easier than initially. I believe after getting the team dynamics together, working out any troubles initially we ran into in the first milestone were worked out in the second milestone, Requirement for SSE. As mentioned in team reflection we corrected a spot we were making changes in OneDrive vs Github, file type was not proper to PC users from my MAC. I acknowledged both troubles. It was determined that going forward I would be more mindful in filename types and remembering possible troubles different platforms could cause along with committing to our main repository!
 
 ### Team Reflection
 The biggest issue we had was getting familiar with Suricata and being aware with it's functionality to come up with use and misuse cases that didn't overlap. We also struggled to understand the difference between a "feature" and an "activity". Additionally, trying to not overcomplicate things seemed like it was going to be tough to add a lot of stuff but ended up finding out it actually wasn't as hard as anticipated. The goal of the diagrams coming from more technical backgrounds than the users the diagrams may be presented to in theory proved that we needed to keep things not as noisy / complicated so readability was easy for customer. A diagram that has too many moving parts can really distract from what is trying to be explained so it is imporant to be concise but still detailed. 
