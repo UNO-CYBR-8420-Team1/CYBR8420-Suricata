@@ -5,7 +5,7 @@
 - Diagram
 - Written Summary
 ### Use/Misuse Case 2: User Authentication and Access Control
-- Diagram
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/Auth-AccessControlUseMisuseCase2.png)
 **Description:** The Network Administrator or Security Analyst accesses Suricata to view activity logs and add, remove, or view existing rules for Suricata’s Intruder Detection and Intrusion Prevention Systems (IDS/IPS). Suricata is running on a host system in the hospital’s network. It takes input from users via command line interface (CLI), and it does not have a user authentication page.
 
 **Misuse Case Description:** A Malicious Actor associates to the hospital’s network via an open, unsecured network. Once on the network, the actor traces the data path back to the network’s Suricata instance and determines that no login credentials are required to access Suricata. The actor is also familiar with the proper CLI syntax to add, edit, and remove rules from Suricata. Using this knowledge with the lack of user authentication, the actor successfully accesses Suricata and can change any rules to circumvent Suricata’s intended functionality. From the unintentional standpoint, a tech-savvy client authenticates to the hospital’s internal network and manages to access Suricata. Since Suricata does not have any user authentication practices, the client has immediate access to Suricata and can send inputs to Suricata that adjust IDS/IPS settings.
