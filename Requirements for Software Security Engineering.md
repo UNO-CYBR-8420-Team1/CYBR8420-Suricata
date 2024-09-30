@@ -19,9 +19,13 @@ The issue highlighted here is the lack of user authentication natively provided 
 Adding an authentication mechanism to access Suricata is the most straightforward solution to this issue. One way of doing this is by developing user authentication functionality to Suricata. This could be managed within the Suricata instance, by an authentication server located on the network Suricata protects, or by deploying Suricata within a container and implementing proper security controls to that container. Another solution to enhance access control to Suricata is by properly segmenting and securing guest networks from internal networks. This would prevent a tech-savvy client from randomly discovering the Suricata instance (or other sensitive data) on the internal network.
 
 ### Use/Misuse Case 3: Intrusion Preventing System
-![Case3](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseMisuseFinal%233.drawio.png)
-- Written Summary
-- 
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseMisuseFinal%233.drawio.png)
+**Description:** A network administrator overseeing a healthcare system utilizes Suricata in order to observe and manage activities occurring on the system network. In doing so, the administrator is able to access Suricata's intrusion detection and prevention systems (IDS/IPS). Through accessing said component, IPS rules can be viewed as well as configured to remain vigilant towards threats the administrator anticipates could occur towards the system. In addition, the administrator can view logs and alerts from the IPSto follow system activity. 
+
+**Misuse Case Description:** An outside actor, such as a foreign nation whose goal is to target healthcare infrastructure may seek to to disrupt or damage devices used in healthcare to assist in various treatment processes. To invoke this, the misuser could attain unauthorized access to the IDS and IPS found within Suricata in order to manipulate the system to their will. From this point rules could be altered so as to not prevent intrusions from occurring enabling the misuser to work their way towards greater network access. Once greater network access has been attained the misuser would then have access to logging and alerting mechanisms provided by the IPS which may include network addresses for sensitive medical equipment that is vulnerable to attacks.
+
+Utilizing an audit logging mechanism addresses part of the misuse issue with respect to Suricata's operation as that provides insight into activity from the IPS to prevent potential malicious IPS rule manipulation. Additional mechanisms that could further seek to address the issue include methods of authentication or access roles for further specification as to who may access the system for unauthorized access prevention. Providing stricter security measure on logging and alerting mechanisms could help to prevent misusers from viewing network activity from Suricata.
+
 ### Use/Misuse Case 4: Log Analysis and Manipulation
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Use%20Cases/UseCase1-Log-Analysis-And-Manipulation.drawio.png)
 
