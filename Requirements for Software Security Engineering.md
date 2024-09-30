@@ -30,17 +30,16 @@ Outside Suricata, some good data protection practices such as the [3-2-1 backup 
 - Diagram
   
 **Description:**
-- The system administrator, responsible for maintaining the security and rule sets of Suricata, is tasked with managing the installation, updating, and validation of Suricata rules. These rules help in identifying and mitigating potential threats detected by Suricata.
-- The administrator installs a new set of rules into Suricata. After the rules are installed, they are validated to ensure they’re working properly within the system.
-- An attacker tries to intercept the rule files during installation. They aim to modify the rules, either by weakening them (ex: making Suricata ignore specific types of traffic) or injecting malicious code.
-- To mitigate the risk, the administrator implements digital signatures for rule files. This ensures that any rule file installed is verified as legitimate and has not been altered.
-- In response to the digital signature implementation, the attacker focuses on compromising the key used to sign rule files, allowing them to sign malicious updates as if they were legitimate.
-- The administrator performs regular updates to the rule sets to ensure they stay current and can detect the latest threats. Each update is validated through an integrity verification process.
-- An attacker targets the update process, injecting malicious rules that allow them to bypass certain protections, such as disabling detection of malicious traffic or creating backdoors.
-- The system uses integrity verification mechanisms, like checksums and cryptographic hashes, to ensure that rule updates haven’t been tampered with. And this check happens before Suricata applies the updated rules.
-- After updating and installing rules, the administrator runs the validation process to ensure Suricata is functioning correctly and following the rules as expected.
-- The attacker tries to perform a man-in-the-middle attack by intercepting the communications between the server and the admin, attempting to impersonate either side to manipulate the outcome of the rule validation process.
+In an healthcare environment, insurance fraudsters aim to access sensitive patient records and insurance details to file fraudulent claims or manipulate medical billing for financial gain. The fraudsters target Suricata to reach their goal.
 
+- The hospital's IT security team including the system admin regularly manages Suricata's rule sets to detect potential anomalies in the network, unauthorized access attempts or unusual data flows. This includes installing new rule updates to enhance threat detection and deleting outdated or irrelevant rules.
+- To ensure the authenticity of these rule updates, the hospital applies digital signatures. Every rule set update must be verified through this signature to confirm its integrity, preventing any tampering with the rule files during transfer or installation.
+- Insurance fraudsters, aiming to access patient data, know that tampering with rule updates could allow them to bypass detection. They attempt to intercept the hospital’s network traffic to inject malicious rules during an update process. The goal is to introduce a backdoor that allows them to siphon data or manipulate billing systems without being detected by Suricata.
+- In response to this, the IT team strengthens the update process by adding two-factor authentication (2FA) for anyone attempting to modify or update rule sets. This ensures only authorized personnel can implement rule changes.
+- The fraudsters, realizing they can’t inject malicious rules due to the new solutions in place, they launch a phishing attack on hospital IT staff, aiming to steal their credentials. By compromising an IT employee’s login, they can bypass 2FA and directly tamper with the rule management system, allowing them to insert their fraudulent rules that avoid detection.
+- To combat rule tampering, the hospital IT team uses integrity verification mechanisms, like cryptographic hashes and checksums, to ensure the rules haven’t been altered. Every rule set must pass this verification process before being applied to Suricata.
+- After updating and installing new rules, the administrator runs a validation process to ensure Suricata is functioning correctly and detecting threats as expected. This process involves checking network traffic to confirm that the new rules are actively identifying anomalies.
+- The attackers attempt a man-in-the-middle (MITM) attack, trying to impersonate the admin to manipulate the outcome of the rule validation. By intercepting the communications, they are trying to bypass the encryption or trick the system into accepting their malicious changes.
 
 
   
