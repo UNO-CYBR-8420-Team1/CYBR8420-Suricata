@@ -91,12 +91,12 @@ From misuse case #4 we should make sure the logging system used is secure from t
 
 To review Suricata's security-related documentation, we looked at the project's official documentation for installation and configuration, particularly focusing on sections related to security. Here's a summary of our observations, along with suggestions for improvement:
 
-## 1. Security in Installation and Setup
+### 1. Security in Installation and Setup
 Suricata’s installation documentation provides detailed instructions on how to install the software on different platforms, but security-related best practices during installation, such as setting up secure user permissions or guidelines for minimizing security risks, are not as prominently featured. For example, running Suricata as a non-root user is crucial for limiting potential damage from an exploit. However, this recommendation is not emphasized. It would be helpful if this section included more specific security tips for installation, such as setting the right access controls and preventing privilege escalation.
 
 - **Suricata Installation Guide:** [Suricata's Installation Documentation](https://suricata.readthedocs.io/en/latest/install.html)
 
-## 2. **Configuration Best Practices**
+### 2. Configuration Best Practices
 Suricata's configuration guide gives a lot of useful tips, especially for performance tuning and making the most out of system resources. It covers things like adjusting thread counts, setting the right buffer sizes, and tweaking detection engines based on network traffic. For example, setting up multi-threading helps Suricata manage high-speed networks better by spreading the workload across multiple CPU cores, which can seriously boost performance in healthcare environments with a lot of patient data being processed.
 
 The documentation also talks about balancing detection accuracy with performance by changing how deep Suricata inspects packets, customizing rule sets for specific needs, and using tools like AF_PACKET or Netmap for faster packet processing. While this tuning is key for real-world use, adding more security-focused advice would make the guide even better.
@@ -105,7 +105,7 @@ For instance, it could include steps for securing configuration files to stop ta
 
 - **Suricata Configuration Guide:** [Suricata's Configuration Documentation](https://suricata.readthedocs.io/en/latest/configuration/index.html)
 
-## 3. **Logging and Alerts**
+### 3. Logging and Alerts
 
 Suricata offers extensive logging and alert options, which are highly customizable to adapt to different operational environments. While much of the focus in the documentation is on optimizing logging for performance (ex: reducing logging overhead in high-traffic networks), there is an opportunity to improve security by focusing on logging integrity and tamper-proof mechanisms.
 
@@ -119,7 +119,7 @@ By enhancing logging integrity, Suricata would not only ensure the performance a
 
 - **Suricata Logging Guide:** [Suricata's Logging Documentation](https://suricata.readthedocs.io/en/latest/output/index.html)
 
-#### 4. **Rule Management**
+### 4. Rule Management
 
 Suricata uses rule sets to detect network threats, suspicious activity, and unusual behavior within a monitored environment. These rule sets are key to how the system spots and responds to potential threats. In a healthcare or hospital setting, where sensitive patient data, medical devices, and important systems like electronic health records (EHR) are at risk, keeping these rule sets secure is really important.
 
