@@ -5,7 +5,7 @@
 ### 
 ## (3) "Suricata does not impact network performance for end users"
 ### 
-## (4) "Suricata can scale effectively to handle an increase in network traffic with minimal impact"
+## (4) "Suricata can scale effectively to handle an increase in network traffic with minimal impact" [UPDATE switch to: Suricata protects the network from DDOS attacks ensuring system availability]
 ### Issue: not security related except to handle DDOS attack
 ## (5) "Suricata is user-friendly to read and view alerts"
 ### Issue: not security related
