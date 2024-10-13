@@ -31,7 +31,7 @@ This milestone we were able to work together to brainstorm ideas for different a
 
 Individual Contribution [Include a reflection on your teamwork for this assignment. What issues occurred? How did you resolve them? What did you plan to change moving forward?]
 
-  - Ben:
+  - Ben: For my contribution I focused on Top-Level Claim 1 / Assurance 1, “Suricata protects the network from internal DDOS attacks.“ There were a few iterations of assurance cases that I had come out with but I found myself being too generic or too broad that would lead the technical expert astray. In addition to that my focus seemed to be externally vs internally which we had learned from the professor that this ultimately needs to be focused inward. After going through a few iterations I was able to hone more on the internal security side and leave out compound statements to provide more clarity on the assurance case. The plan going forward was to make sure that these were more concise for example my first iteration was so broad on the wording that it wasn't easy for the reader to follow in addition to thinking i needed to add each bit that professor did for his assurance case which resulted in a forced approach which wasn’t correct. Additionally I focused better on the wording aspect to prevent myself from running into doubts by the end user as pointed out by group members. 
   - Matt:
   - Shane:
   - Nathan:
