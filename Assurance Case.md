@@ -3,19 +3,19 @@
 ## Part 1
 ### Top-Level Claim 1
 - diagram
-- arguement described
+- argument described
 ### Top-Level Claim 2
 - diagram
-- arguement described
+- argument described
 ### Top-Level Claim 3
 - diagram
-- arguement described
+- argument described
 - ### Top-Level Claim 4
 - diagram
-- arguement described
+- argument described
 - ### Top-Level Claim 5
 - diagram
-- arguement described
+- argument described
 ## Part 2
 ### Alignment of evidence with Top-Level Claims (Assurances)
 ### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
