@@ -8,7 +8,7 @@
 - diagram
 - argument described
 ### Top-Level Claim 3
-- diagram
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case%20-%20Intrusion%20Rules%20are%20Protected%20Against%20Unauthorized%20Access.drawio.png)
 - argument described
 ### Top-Level Claim 4
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case%20-%20Logs%20secure%20against%20manipulation.drawio.png)
