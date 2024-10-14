@@ -2,7 +2,7 @@
 # Assurance Cases
 ## Part 1
 ### Top-Level Claim 1
-![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case1.drawio.png)
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case1.drawio%20(1).png)
 - argument described
 ### Top-Level Claim 2
 - diagram
