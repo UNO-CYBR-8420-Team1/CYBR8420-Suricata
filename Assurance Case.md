@@ -30,7 +30,7 @@ The second doubt  would be that if the logs are stored only the server, they cou
 The third doubt would be the risk if log flooding with legit traffic can hide malicious actions. To handle this, Suricata offers the common practice of log rotation to divide up the logs. Alone, this log rotation itself initially causes concern that too many logs would cause the rollover and in turn get deleted if the rotation is limited in capacity. However, log deletion is not handled by Suricata. The log capacity concern and limitations implied by rotation is a process handled outside due to the limitations of the hardware platform/capacity. This is outside the scope of the software.
 
 - ### Top-Level Claim 5
-- diagram
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20case-%20Suricata--final.drawio.png)
 - argument described
 ## Part 2
 ### Alignment of evidence with Top-Level Claims (Assurances)
