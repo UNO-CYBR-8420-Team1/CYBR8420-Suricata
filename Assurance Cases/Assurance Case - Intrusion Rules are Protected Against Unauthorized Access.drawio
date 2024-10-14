@@ -40,7 +40,7 @@
             <mxPoint x="365" y="372.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YeIq4Yx3Gjz6VLKn_5kp-13" value="&lt;b&gt;Rebuttal R1:&lt;/b&gt; Unless IDS/IPS rules do not account for the newest intrusion techniques&amp;nbsp;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" vertex="1" parent="1">
+        <mxCell id="YeIq4Yx3Gjz6VLKn_5kp-13" value="&lt;b&gt;Rebuttal R1:&lt;/b&gt; Unless intrusion rules do not account for the newest intrusion techniques&amp;nbsp;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" vertex="1" parent="1">
           <mxGeometry x="-332.5" y="232.5" width="140" height="90" as="geometry" />
         </mxCell>
         <mxCell id="YeIq4Yx3Gjz6VLKn_5kp-14" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="YeIq4Yx3Gjz6VLKn_5kp-1" target="YeIq4Yx3Gjz6VLKn_5kp-13">
