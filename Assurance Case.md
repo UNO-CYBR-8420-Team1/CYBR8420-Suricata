@@ -16,8 +16,18 @@ Although not specifically stated in the Suricata documentation hardware limitati
 Last rebuttal part of this assurance case for Suricata protecting the network from DoS is that Suricata is not up to date. A system that is not up to date especially handling the needs of Personally Identifiable Information or (PII) can be exposed to malicious actors. The security analyst will regularly stay up to date with Suricata [releases](https://suricata.io/category/release/) which are managed and verified from Suricata’s direct website.
 ### Assurance Claim 2
 #### Top-Level Claim: Suricata detects unauthorized network traffic.
-![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/mpopelka_Suricata%20Assurance%20Case.drawio%20(1).png)
-- argument described
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/mpopelka_Suricata%20Assurance%20Case.drawio%20(2).png)
+#### Argument
+This assurance case focuses one of Suricata’s primary features: detecting unauthorized network traffic. As Suricata is an Intrusion Detection and Prevention System, being able to identify unauthorized network traffic is crucial.
+
+At a basic level, Suricata must be installed to function. Since Suricata is an open-source software, its installation is fairly simple: download the software package and install it. After Suricata is installed, the Suricata administrator must enable the network monitoring feature. Otherwise, Suricata will not monitor network traffic. Proper functionality can be verified by reviewing Suricata logs to ensure traffic is being monitored.
+
+When configuring Suricata to monitor for unauthorized network traffic, it is important to enable the proper Suricata modes. If Suricata is configured in host protection mode, it will only monitor traffic coming from and leaving the host it is on. As outlined in Suricata’s documentation for configuring [inline mode](https://docs.suricata.io/en/latest/setting-up-ipsinline-for-linux.html), configuring Suricata in inline mode will allow the Intrusion Detection portion of Suricata to alert on unauthorized traffic. Once Suricata is configured to monitor inline traffic, the administrator will need to define specific rules that can detect unauthorized traffic. Alerts from Suricata can be used to determine if network traffic rules are properly defined.
+
+To detect unauthorized network traffic, proper detection rules must be implemented and configured into Suricata.  Once the rules are configured, alerting must be enabled for Suricata to generate alerts when rule parameters are met. This can be verified by viewing the alerts Suricata generates. It is important to regularly update the unauthorized network traffic rule parameters, because if the unauthorized traffic does not match the existing rules, alerts will not be generated. Additionally, unauthorized network traffic can be disguised as normal traffic. Ensuring the rules are regularly updated to look for new types of unauthorized traffic will ensure Suricata generates alerts for all unauthorized traffic. This can be verified by reviewing network traffic logs from Suricata.
+
+For Suricata to detect unauthorized traffic, it must be configured on a production network. If multiple production networks exist within an entity, Suricata must be configured to monitor uplink and downlink traffic of all production networks to detect any unauthorized traffic. Network traffic logs can be consulted to verify Suricata is policing all network traffic.
+
 ### Assurance Claim 3
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case%20-%20Intrusion%20Rules%20are%20Protected%20Against%20Unauthorized%20Access.drawio%20(1).png)
 #### Argument
