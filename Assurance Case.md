@@ -52,6 +52,13 @@ Correct configuration of Suricata is also essential to ensure accurate detection
 
 One major challenge is that malware like Emotet may use encrypted traffic to evade detection. To counter this, Suricata’s TLS/SSL inspection feature can be used to decrypt and examine encrypted traffic, ensuring that Emotet is still detectable even in HTTPS connections Suricata SSL Decryption. The downside, though, is that inspecting encrypted traffic can slow down performance, especially in a busy environment like a hospital. Suricata addresses this by allowing administrators to carefully configure TLS/SSL rules Suricata TLS Rules, using tools like tls.store and tls.log to efficiently manage encrypted sessions while minimizing performance impacts.
 
+References:
+- [Adding Your Own Rules](https://docs.suricata.io/en/latest/rule-management/adding-your-own-rules.html)
+- [TLS/SSL Keywords Documentation](https://docs.suricata.io/en/latest/rules/tls-keywords.html)
+- [Performance: Run Modes](https://docs.suricata.io/en/latest/performance/runmodes.html)
+- [Performance: Packet Profiling](https://docs.suricata.io/en/latest/performance/packet-profiling.html)
+- [Emerging Threats Open Ruleset](https://rules.emergingthreats.net/open/suricata/rules/)
+- [Performance: High-Performance Configurations](https://docs.suricata.io/en/latest/performance/high-performance-config.html)
 
 ## Part 2
 ### Alignment of evidence with Top-Level Claims (Assurances)
