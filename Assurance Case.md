@@ -1,7 +1,8 @@
 
 # Assurance Cases
 ## Part 1
-### Assurance Claim 1
+### Assurance Case 1
+#### Top-Level Claim: Suricata protects the network from DoS attacks
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case1.drawio%20(1).png)
 #### Argument
 This assurance case focuses on Suricata protecting the network from DoS or Denial of Service attacks. The idea that a denial of service attack can affect the way the system runs can impact the network systems, services, and accountability of care given to the customers of the hospital.
