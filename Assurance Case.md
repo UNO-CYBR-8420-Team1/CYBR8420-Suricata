@@ -2,8 +2,8 @@
 # Assurance Cases
 ## Part 1
 ### Assurance Claim 1
-#### Argument
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case1.drawio%20(1).png)
+#### Argument
 This assurance case focuses on Suricata protecting the network from DoS or Denial of Service attacks. The idea that a denial of service attack can affect the way the system runs can impact the network systems, services, and accountability of care given to the customers of the hospital.
 
 The system is set up for efficient packet capture through system load, load balancing and capture filters. Some evidence we have to reinforce whether the system is set up to work efficiently or needs additional adjustment is [performance analysis](https://docs.suricata.io/en/latest/performance/analysis.html) in which we can see the system load to get an idea of the traffic breakdown. The user can run the “htop” command to see the results. Additionally within the performance analysis we can check stats.log or suricata.log files for a deeper dive into this analysis. Next, the user will need to run load balancing to run multithreading to offset load of network traffic to the system which allows it to take on more data and analyze through it more efficiently. The breakup of the network traffic allows it to properly sort this traffic to prevent overload and system degradation/failure. The security analyst can also set up [capture filters](https://docs.suricata.io/en/latest/performance/ignoring-traffic.html) to allow the system to ignore specific traffic to allow the focus on what the analyst actually wants to see, preventing alert and log fatigue allowing only the important data to stream through and be logged.
