@@ -79,7 +79,7 @@ Here's how we split the responsibilities to create initial drafts:
   - Top-Level Claim 2: Matt
   - Top-Level Claim 3: Shane - Intrusion Rules are Protected Against Unauthorized Access
   - Top-Level Claim 4: Nathan - The network logs are secure against manipulation
-  - Top-Level Claim 5: Grace
+  - Top-Level Claim 5: Grace - The Intrusion rules implemented in Suricata can detect the malware signature in real time
 
 DELETE THIS -> LEFT TO REMINDER [Include a reflection on your teamwork for this assignment. What issues occurred? How did you resolve them? What did you plan to change moving forward?]
 
