@@ -14,8 +14,8 @@ Next part of the rebuttal of Suricata software is not set up properly is that Su
 Although not specifically stated in the Suricata documentation hardware limitations exist in any system and can affect the way a system performs. Suricata mentions that with certain hardware [requirements](https://docs.suricata.io/en/latest/capture-hardware/ebpf-xdp.html#requirements) such as a system that can run kernel XDP and a network card that supports XDP. The expansion of business or end of life (EOL) hardware can cause future troubles or limitations to the efficiency of the system and how it performs. If the system only has 10GB of memory, logs could fill leading to system failure before the logs could be stored and reviewed in a larger hospital network. The claim for business growing exponentially is that Suricata is retrofitted with future expansion to prevent this from happening which can be provided by a business needs report from hospital tech management. The claim that hardware is end of life is that obsolete hardware is replaced proactively. The evidence from this is a manufacturer’s end of life report that allows the business to know what needs replaced before it is no longer supported to stay on top.
 
 Last rebuttal part of this assurance case for Suricata protecting the network from DoS is that Suricata is not up to date. A system that is not up to date especially handling the needs of Personally Identifiable Information or (PII) can be exposed to malicious actors. The security analyst will regularly stay up to date with Suricata [releases](https://suricata.io/category/release/) which are managed and verified from Suricata’s direct website.
-### Assurance Claim 2
-#### Top-Level Claim: Suricata detects unauthorized network traffic.
+### Assurance Case 2
+#### Top-Level Claim: Suricata detects unauthorized network traffic
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/mpopelka_Suricata%20Assurance%20Case.drawio%20(2).png)
 #### Argument
 This assurance case focuses one of Suricata’s primary features: detecting unauthorized network traffic. As Suricata is an Intrusion Detection and Prevention System, being able to identify unauthorized network traffic is crucial.
@@ -28,7 +28,8 @@ To detect unauthorized network traffic, proper detection rules must be implement
 
 For Suricata to detect unauthorized traffic, it must be configured on a production network. If multiple production networks exist within an entity, Suricata must be configured to monitor uplink and downlink traffic of all production networks to detect any unauthorized traffic. Network traffic logs can be consulted to verify Suricata is policing all network traffic.
 
-### Assurance Claim 3
+### Assurance Case 3
+#### Top-Level Claim: Intrusion rules are protected against unauthorized access
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case%20-%20Intrusion%20Rules%20are%20Protected%20Against%20Unauthorized%20Access.drawio%20(1).png)
 #### Argument
 For this assurance case, the top-level claim being shown pertains to the rules that are utilized by Suricata for intrusion detection and intrusion prevention. The focus of the claim is on the rules and that they are protected from unwanted individuals seeking to gain access to them.
@@ -39,7 +40,8 @@ A second overarching rebuttal for this top-level claim would be the doubt of Sur
 
 A third rebuttal that can be presented to counter the top-level claim for this assurance case would be the concern of Suricata not possessing user identification rules to restrict access to certain aspects of Suricata including its intrusion rules. For this, two sub-claims could be leveraged to reassure this doubt through features such as user authentication and role-based access. There is not evidence available from Suricata currently as to support these sub-claims.
 
-### Assurance Claim 4
+### Assurance Case 4
+#### Top-Level Claim: The network logs are secure against manipulation
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case%20-%20Logs%20secure%20against%20manipulation.drawio.png)
 #### Argument
  There's concern that the network logs that are used to monitor and alert off network activity are not secure from manipulation that would hide a malicious user’s actions while accessing private information like medical records from the hospital’s private network. 
@@ -50,7 +52,8 @@ The second doubt  would be that if the logs are stored only the server, they cou
 
 The third doubt would be the risk if log flooding with legit traffic can hide malicious actions. To handle this, Suricata offers the common practice of log rotation to divide up the logs. Alone, this log rotation itself initially causes concern that too many logs would cause the rollover and in turn get deleted if the rotation is limited in capacity. However, log deletion is not handled by Suricata. The log capacity concern and limitations implied by rotation is a process handled outside due to the limitations of the hardware platform/capacity. This is outside the scope of the software.
 
-### Assurance Claim 5
+### Assurance Case 5
+#### Top-Level Claim: The Intrusion rules implemented in Suricata can detect the malware signature in real time
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20case-%20Suricata--final.drawio.png)
 
 The main argument is that Suricata’s IDS/IPS rules are capable of detecting Emotet malware signatures in real-time within a hospital network. Hospitals process huge amounts of sensitive patient data, and a breach caused by malware could have devastating consequences. To prevent this, Suricata must be able to quickly and accurately process traffic and identify malware signatures like Emotet as soon as they appear. Emotet is a sophisticated and evolving strain of malware primarily known for its ability to spread through malicious email attachments and links.
@@ -89,7 +92,7 @@ We found based on assurance claim 5 that Suricata’s capability for SSL and TLS
 Here's how we split the responsibilities to create initial drafts:
   - Top-Level Claim 1: Ben - Suricata protects the network from DoS attacks
   - Top-Level Claim 2: Matt - Suricata detects unauthorized network traffic
-  - Top-Level Claim 3: Shane - Intrusion Rules are Protected Against Unauthorized Access
+  - Top-Level Claim 3: Shane - Intrusion rules are protected against unauthorized access
   - Top-Level Claim 4: Nathan - The network logs are secure against manipulation
   - Top-Level Claim 5: Grace - The Intrusion rules implemented in Suricata can detect the malware signature in real time
 
