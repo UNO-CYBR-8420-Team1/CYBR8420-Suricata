@@ -16,7 +16,7 @@ Although not specifically stated in the Suricata documentation hardware limitati
 Last rebuttal part of this assurance case for Suricata protecting the network from DoS is that Suricata is not up to date. A system that is not up to date especially handling the needs of Personally Identifiable Information or (PII) can be exposed to malicious actors. The security analyst will regularly stay up to date with Suricata [releases](https://suricata.io/category/release/) which are managed and verified from Suricata’s direct website.
 ### Assurance Claim 2
 #### Top-Level Claim: Suricata detects unauthorized network traffic.
-![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/mpopelka_Suricata%20Assurance%20Case.drawio.png)
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/mpopelka_Suricata%20Assurance%20Case.drawio%20(1).png)
 - argument described
 ### Assurance Claim 3
 ![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Assurance%20Cases/Assurance%20Case%20-%20Intrusion%20Rules%20are%20Protected%20Against%20Unauthorized%20Access.drawio%20(1).png)
