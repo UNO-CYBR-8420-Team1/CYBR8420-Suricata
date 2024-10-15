@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram id="2RAkf9iS2bYrb-5zrusB" name="Page-1">
-    <mxGraphModel dx="1323" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,49 +13,29 @@
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="EpLoNu7SxfJ4iQwhgqlz-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-37" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;" parent="1" source="f0J4ps2NvKq0wRHhP7px-2" target="EpLoNu7SxfJ4iQwhgqlz-36" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-2" value="&lt;b&gt;Top-Claim C1:&lt;br&gt;&lt;/b&gt;The network logs are secure against manipulation" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="345" y="10" width="125" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-3" value="&lt;b&gt;Context: CT1&lt;/b&gt;&lt;br&gt;The network logs store the activity of the alerts for unusual activity is based off of" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
-          <mxGeometry x="590" y="30" width="180" height="80" as="geometry" />
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-3" value="&lt;b&gt;Context: CT1&lt;/b&gt;&lt;br&gt;The network logs store the activity of the alerts for unusual activity" style="rounded=1;whiteSpace=wrap;html=1;arcSize=30;" parent="1" vertex="1">
+          <mxGeometry x="590" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-5" target="EpLoNu7SxfJ4iQwhgqlz-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-5" value="&lt;b&gt;Rebuttal R1: &lt;/b&gt;Unless&amp;nbsp;someone can&amp;nbsp; manipulate the log file" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
-          <mxGeometry x="116.25" y="160" width="150" height="70" as="geometry" />
+          <mxGeometry x="116.25" y="150" width="150" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-13" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="f0J4ps2NvKq0wRHhP7px-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="460" y="390" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-8" value="&lt;b&gt;Sub-Claim C2:&lt;br&gt;&lt;/b&gt;Logs access is configured as Linux permissions level &quot;600&quot; so only modified by creator Suricata" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-8" value="&lt;b&gt;Sub-Claim C2:&lt;br&gt;&lt;/b&gt;Log access is configured as Linux permission level &quot;600&quot; so only modified by the creator in Suricata" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="63.75" y="280" width="202.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-20" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-8" target="EpLoNu7SxfJ4iQwhgqlz-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-23" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-18" target="EpLoNu7SxfJ4iQwhgqlz-22" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-18" value="&lt;b&gt;Evidence E1&lt;/b&gt;:&lt;div&gt;Linux Security Module Landlock&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="20" y="610" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-25" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-19" target="EpLoNu7SxfJ4iQwhgqlz-24" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-19" value="&lt;b&gt;Evidence E3:&lt;/b&gt;&lt;br&gt;Address Space Layout Randomization&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="245" y="610" width="100" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
-          <mxGeometry x="55" y="730" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="EpLoNu7SxfJ4iQwhgqlz-24" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
-          <mxGeometry x="280" y="740" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-28" value="&lt;b&gt;Undermine UM1:&lt;/b&gt; Unless the permission configs can be edited" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#A9C4EB;" parent="1" vertex="1">
           <mxGeometry x="30" y="390" width="140" height="60" as="geometry" />
@@ -63,130 +43,172 @@
         <mxCell id="EpLoNu7SxfJ4iQwhgqlz-36" value="&lt;b&gt;Inference Rule IR1: &lt;/b&gt;If the logs are replicated off-device then it&#39;s more secure" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;size=0.05555555555555555;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="330" y="390" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-1" value="&lt;b&gt;Rebuttal R2: &lt;/b&gt;Unless logs are lost if a server crashes" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" vertex="1" parent="1">
-          <mxGeometry x="335" y="160" width="150" height="70" as="geometry" />
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-1" value="&lt;b&gt;Rebuttal R2: &lt;/b&gt;Unless logs are lost if a server crashes" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="338" y="150" width="150" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-2" value="&lt;b&gt;Sub-Claim C3:&lt;br&gt;&lt;/b&gt;Logs are configured with centralized off-network setup" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="338" y="285" width="175" height="60" as="geometry" />
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-2" value="&lt;b&gt;Sub-Claim C3:&lt;br&gt;&lt;/b&gt;Logs are configured with centralized off-network setup" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="280" width="175" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-6" value="&lt;b&gt;Sub-Claim C4:&lt;br&gt;&lt;/b&gt;Suricata configuration file is secure" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-6" value="&lt;b&gt;Sub-Claim C4:&lt;br&gt;&lt;/b&gt;Suricata configuration file is secure" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="30" y="500" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;exitPerimeter=0;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-28" target="f0J4ps2NvKq0wRHhP7px-6">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-9" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;exitPerimeter=0;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-28" target="f0J4ps2NvKq0wRHhP7px-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="201" y="340" as="sourcePoint" />
             <mxPoint x="280" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-10" value="&lt;b&gt;Evidence E2&lt;/b&gt;:&lt;div&gt;Suricata supports Linux process thread blocking&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" vertex="1" parent="1">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-10" value="&lt;b&gt;Evidence E2&lt;/b&gt;:&lt;div&gt;Suricata Linux process thread blocking&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;support&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="130" y="610" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-11" value="&lt;b&gt;Evidence E4:&lt;/b&gt;&lt;br&gt;Installed hardware without direct internet access&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" vertex="1" parent="1">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-11" value="&lt;b&gt;Evidence E4:&lt;/b&gt;&lt;br&gt;Installed hardware without direct internet access&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="360" y="610" width="100" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-13" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" target="f0J4ps2NvKq0wRHhP7px-14">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="180" y="710" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-14" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
-          <mxGeometry x="165" y="740" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-15" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" target="f0J4ps2NvKq0wRHhP7px-16">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="410" y="710" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-16" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
-          <mxGeometry x="395" y="740" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-17" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-6" target="EpLoNu7SxfJ4iQwhgqlz-18">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-17" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="f0J4ps2NvKq0wRHhP7px-6" target="EpLoNu7SxfJ4iQwhgqlz-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="460" as="sourcePoint" />
             <mxPoint x="110" y="510" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-18" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-6" target="f0J4ps2NvKq0wRHhP7px-10">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-18" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" parent="1" source="f0J4ps2NvKq0wRHhP7px-6" target="f0J4ps2NvKq0wRHhP7px-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="110" y="570" as="sourcePoint" />
             <mxPoint x="80" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-19" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" target="EpLoNu7SxfJ4iQwhgqlz-19">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="560" as="sourcePoint" />
-            <mxPoint x="190" y="620" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-29" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="392.5" y="480" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-20" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-6" target="f0J4ps2NvKq0wRHhP7px-11">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="110" y="570" as="sourcePoint" />
-            <mxPoint x="305" y="620" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-30" value="&lt;b&gt;Rebuttal R3: &lt;/b&gt;Unless log flooding with legit traffic can hide malicious actions" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" parent="1" vertex="1">
+          <mxGeometry x="580" y="150" width="190" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-28" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" target="f0J4ps2NvKq0wRHhP7px-29">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="425" y="450" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-29" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
-          <mxGeometry x="410" y="480" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-30" value="&lt;b&gt;Rebuttal R3: &lt;/b&gt;Unless log flooding with legit traffic can hide malicious actions" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=17;fillColor=#FFF2CC;" vertex="1" parent="1">
-          <mxGeometry x="580" y="160" width="190" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-31" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" edge="1" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="f0J4ps2NvKq0wRHhP7px-30">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-31" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;" parent="1" source="EpLoNu7SxfJ4iQwhgqlz-2" target="f0J4ps2NvKq0wRHhP7px-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="418" y="80" as="sourcePoint" />
             <mxPoint x="420" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-34" value="&lt;b&gt;Sub-Claim C5:&lt;br&gt;&lt;/b&gt;Logs are configured with log rotation adaquately" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-34" value="&lt;b&gt;Sub-Claim C5:&lt;br&gt;&lt;/b&gt;Logs are configured with log rotation adaquately" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="595" y="280" width="175" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-35" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.458;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=1;exitPerimeter=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="410" y="230" as="sourcePoint" />
-            <mxPoint x="410" y="277" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-38" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-30" target="f0J4ps2NvKq0wRHhP7px-34">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="201" y="240" as="sourcePoint" />
-            <mxPoint x="175" y="290" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-41" value="&lt;b&gt;Inference Rule IR2: &lt;/b&gt;If the logs capacity is a concern, then it&#39;s handled at the hardware level" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;size=0.05555555555555555;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-41" value="&lt;b&gt;Inference Rule IR2: &lt;/b&gt;If the logs capacity is a concern, then it&#39;s handled at the hardware level" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;size=0.05555555555555555;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="595" y="390" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-42" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-34" target="f0J4ps2NvKq0wRHhP7px-41">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="436" y="355" as="sourcePoint" />
-            <mxPoint x="430" y="400" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-45" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="665" y="480" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-44" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" target="f0J4ps2NvKq0wRHhP7px-45">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="685" y="450" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-45" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
-          <mxGeometry x="670" y="480" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-46" value="&lt;b&gt;Sub-Claim C6:&lt;br&gt;&lt;/b&gt;Logs are not deleted by Suricata" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-46" value="&lt;b&gt;Sub-Claim C6:&lt;br&gt;&lt;/b&gt;Logs are not deleted by Suricata" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="280" width="175" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-48" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-30" target="f0J4ps2NvKq0wRHhP7px-46">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-48" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="f0J4ps2NvKq0wRHhP7px-30" target="f0J4ps2NvKq0wRHhP7px-46" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="695" y="260" as="sourcePoint" />
             <mxPoint x="703" y="300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="f0J4ps2NvKq0wRHhP7px-50" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-46" target="f0J4ps2NvKq0wRHhP7px-41">
+        <mxCell id="f0J4ps2NvKq0wRHhP7px-50" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;" parent="1" source="f0J4ps2NvKq0wRHhP7px-46" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="693" y="350" as="sourcePoint" />
-            <mxPoint x="695" y="400" as="targetPoint" />
+            <mxPoint x="700" y="390" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-2" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=block;endFill=1;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407" y="70" as="sourcePoint" />
+            <mxPoint x="407" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-4" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407" y="220" as="sourcePoint" />
+            <mxPoint x="407" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-5" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407" y="340" as="sourcePoint" />
+            <mxPoint x="407" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-6" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="407" y="450" as="sourcePoint" />
+            <mxPoint x="407" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-8" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="674.5" y="220" as="sourcePoint" />
+            <mxPoint x="674.5" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-9" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="682" y="340" as="sourcePoint" />
+            <mxPoint x="682" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-11" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="679.5" y="450" as="sourcePoint" />
+            <mxPoint x="679.5" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-13" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1" target="EpLoNu7SxfJ4iQwhgqlz-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="560" as="sourcePoint" />
+            <mxPoint x="290" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="100" y="580" />
+              <mxPoint x="295" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-14" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="f0J4ps2NvKq0wRHhP7px-6" target="f0J4ps2NvKq0wRHhP7px-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="550" as="sourcePoint" />
+            <mxPoint x="405" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="100" y="570" />
+              <mxPoint x="410" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-15" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="69.5" y="710" as="sourcePoint" />
+            <mxPoint x="69.5" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-16" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="294.5" y="710" as="sourcePoint" />
+            <mxPoint x="294.5" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-17" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="409.5" y="710" as="sourcePoint" />
+            <mxPoint x="409.5" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-18" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="395" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-19" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="280" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-20" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="55" y="740" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-21" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="179.5" y="710" as="sourcePoint" />
+            <mxPoint x="179.5" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vr3q9P4M-nq2RWd7EeUt-22" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CCCCCC;" vertex="1" parent="1">
+          <mxGeometry x="165" y="740" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
