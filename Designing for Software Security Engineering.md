@@ -6,13 +6,9 @@
 ## Part 2: Observations
 ### Design Related Issues With Suricata
 
-#### Operational Environment Based Security
-One observation we've seen with the threat analysis is the security of the system is really rooted in the security of the environment it runs in. 
-We take highlight of this with the note that the data stores it interacts with are local files that it generates or reads from. Additional to reinforce this is the lack of a "login" and any sort of user interface security might be needed to be put around. Network Admins would interact with Suricata at the Linux terminal and through editing it's configuration file data stores, where access is based on the environment being secure. 
+One observation we've seen with the threat analysis is the security of the system is really rooted in the security of the environment it runs in. We interpret this with the observation from the threat modeling tool analysis that the data Suricata stores and interacts with are local files that it generates or reads from. An example to reinforce this observation is the lack of a "login" and user interface security navigated around. Network Administrators would interact with Suricata at the Linux terminal and through editing it's configuration file data stores, where access is based on the environment being secure. 
 
-#### Run Mode Considerations
-One potential gap we've identified is the security differences based on the "run modes" being used (https://docs.suricata.io/en/latest/performance/runmodes.html). For our limited scope analysis, we used the most secure single process run mode for our analysis to limit the scope of concern and assume a more secure starting point. In industry, it would be critical to review these alternative run modes for analysis since they would help gain performance gains through leveraging multi-threading and load balancing more. Disabling multiple processes from being ran is more secure and this was also brought up in our assurance case 4 where we pointed out the configuration hardening that can be done by enabling thread blocking. 
-TODO: Insert DFD draft of alternative "run modes"?
+One potential gap we've identified is the security differences based on the [runmodes](https://docs.suricata.io/en/latest/performance/runmodes.html) being used. For our limited scope analysis, we used the most secure single process runmode for our analysis to limit the scope of concern and assume a more secure starting point. In industry, it would be critical to review these alternative runmodes for analysis since they would help with performance gains through leveraging multi-threading, load balancing, and more. Disabling multiple processes from being ran is more secure and this was also brought up in our assurance case 4 where we pointed out the configuration hardening that can be done by enabling thread blocking. 
 
 ### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
 ### Individual Contributions
