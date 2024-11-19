@@ -1,8 +1,8 @@
 # Designing for Software Security Engineering
 ## Part 1: Threat Modeling
-### Data Flow Diagram(s)
-![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Threat%20Modeling%20Brainstorm/DFD-Final.png))
-### HTML Report From Microsoft Threat Modeling Tool
+### Data Flow Diagram
+![Diagram](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Threat%20Modeling%20Brainstorm/DFD-Final.png)
+### [HTML Report From Microsoft Threat Modeling Tool](https://htmlpreview.github.io/?https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Threat%20Modeling%20Brainstorm/Suricata%20DFD%20Report.htm)
 ## Part 2: Observations
 ### Design Related Issues With Suricata
 
