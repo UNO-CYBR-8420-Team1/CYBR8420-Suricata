@@ -19,7 +19,7 @@ A final area observed with the TMT anaylsis was understanding the severity of th
 ### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
 ### Individual Contributions
 - Ben
-  - My contribution to the project is 
+  - My contribution to this milestone was helping develop an inital day one DFD to get the ball rolling. The inital diagram helped mold more iterations to the finalized DFD. In addition to this I joined my team with the professor for further feedback on project and later in bouncing ideas off of each other as a group to hone in our final product. After that we were able to work each individually on threats identified from TMT analysis and break up those and work together as a group on them while reviewing each others. Lastly, continued group check ins keeping the team aligned and on task, along with bringing the team to the finish line.
 - Grace
   - For this assignment, I contributed by creating an individual Data Flow Diagram (DFD) to support the brainstorming of ideas and provide a clear visualization of the system's components, data flows, and trust boundaries. Additionally, I assessed 10 specific threats using the Microsoft Threat Modeling Tool (TMT), analyzing their impact, justification, and mitigation status. My work contributed to help the team understand DFD making sure we were on the right track.
 - Shane
