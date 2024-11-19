@@ -21,7 +21,7 @@ External Measures to Discuss (Fill these thoughts out further as separate paragr
 - Ben
   - My contribution to the project is 
 - Grace
-  - place text here
+  - For this assignment, I contributed by creating an individual Data Flow Diagram (DFD) to support the brainstorming of ideas and provide a clear visualization of the system's components, data flows, and trust boundaries. Additionally, I assessed 10 specific threats using the Microsoft Threat Modeling Tool (TMT), analyzing their impact, justification, and mitigation status. My work contributed to help the team understand DFD making sure we were on the right track.
 - Shane
   - place text here
 - Matt
