@@ -8,6 +8,12 @@
 #### How did your code review strategy attempt to address the anticipated challenges?
 ### Manual Code Review Findings
 ### Automated Code Scan Findings
+#### [SonarCloud](https://sonarcloud.io/)
+
+(INSERT IMAGES OF ANALYSIS HERE)
+
+[SonarCloud Analysis Output Link](https://sonarcloud.io/summary/overall?id=shellis0_suricata)
+
 ## Part 2: Key Findings and Contributions
 ### Summary of Findings
 ### Ongoing Contributions
