@@ -48,26 +48,37 @@
 
 ### Automated Code Scan Findings
 #### Automated #1 [SonarCloud](https://sonarcloud.io/)
-
 (INSERT IMAGES OF ANALYSIS HERE)
-
 [SonarCloud Analysis Output Link](https://sonarcloud.io/summary/overall?id=shellis0_suricata)
-***
-#### Automated #2 [GITHUB CodeQL](https://github.com/nsteck17/suricata/security/code-scanning)
-(INSERT IMAGES OF ANALYSIS HERE)
-- About 30 results
-***
-#### Automated #3 [Fortify Scan](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/suricata-version-Fortify_Security_Report.pdf)
 
-#### Automated #4 Flaw Finder
->>> TODO: Grace ad more details here
 ***
+
+#### Automated #2 [GITHUB CodeQL](https://github.com/nsteck17/suricata/security/code-scanning)
+Incase access to the Fork and scan results are limited, here's a PDF of the pages: 
+- [Forked Suricata CodeQL PDF Page 1 of 2](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/CodeQL/Code%20scanning%20alerts%20%C2%B7%20nsteck17_suricata%20-%20P1.pdf)
+- [Forked Suricata CodeQL PDF Page 2 of 2](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/CodeQL/Code%20scanning%20alerts%20%C2%B7%20nsteck17_suricata%20-%20P2.pdf)
+
+![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/CodeQL/Screenshot%202024-12-07%20093638.png)
+
+When creating the fork of Suricata, at first we struggled to get it working with CodeQL. We learned this is because the C code's build commands were not valid for the default CodeQL generated approach. After some trial and error (and educated review how CodeQL is setup/works) we finally saw that it is basaed on the .github/workflows/codeql.yml configuration and actually Suricata's source code actually already had an "advanced" setup [here](https://github.com/OISF/suricata/tree/master/.github/workflows) and finally we were able to get some results. 
+
+Our initial checklist of CWEs identified CWE-22 and CWE-73 that was found in by results of the CodeQL scans, confirming our original thoughts. 
+These both were associated to instances of "Uncontrolled data used in path expression" findings which there were three seperate entries for in the results set. 
+![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/CodeQL/Screenshot%202024-12-07%20100156.png)
+  
+***
+
+#### Automated #3 [Fortify Scan](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/suricata-version-Fortify_Security_Report.pdf)
 ![image](https://github.com/user-attachments/assets/052d0c3a-76dc-404b-b345-d74d219df8c1)
 
 Nathan setup the Fortify scan using his work's (Union Pacific Railroad) provided Fortify utility scanning setup and default rules there (not on a GitHub intergration). He thought this would be a good "industry standard" approach as this is the same scan the rest of the code that runs in production goes through. Interestingly enough though it didn't actually scan all the C and Rust language files. It specifically captured the Python and other utility files (like Docker) where credentials are stored. So the results were not fully "inclusive" but it did give an interesting unique insight others may not be able to do.
 
 Linked are a PDF of results, but it's important to note the scan also produced an "FPR" file that could be opened by Fortify workbench software. This makes it easeir to review the scan results in a more "user friendly" way with more details. This includes full code references and additional details not seen in the PDF output. 
-  
+
+#### Automated #4 Flaw Finder
+>>> TODO: Grace ad more details here
+***
+
 ***
 ## Part 2: Key Findings and Contributions
 ### Summary of Findings
