@@ -160,9 +160,4 @@ So based on my findings this is actually a false positive. I picked this example
     
 ***
 ### Team Reflection
->>> TODO:
->>> Notes (from Nathan to get this started and add points):
->>> - Would of tried to meet and organize more about use cases and how CWE they tied to our use cases
->>> - Might of been good to do a high level code review together of the source code, the holiday really gave us time, but we had trouble using that extra time effectively at the start getting everyone together. 
->>> - Big win that we each picked an automation tool to try to get working to correlate results of CWE between each
->>> - Did a great job in our group discussion trying to wrap our head around the tasks together and set expectations, and we get along together great which is good. 
+This milestone proved to have some challenges in terms of working around holidays to meet with team members but we were able to overcome this by working through chat, Friday meetups, and discord calls. We were able to start out with an initial manual code analysis to get CWEs that may align with our OSS. We found that after doing a manual analysis and then pairing that with automatic analysis there were commonalities to help reinforce that this would be a great place to hone in on our CWEs. Our group chose to use several different automatic code analysis tools which ultimately worked in our favor to see what matched and if we were on the right track. The idea that we had some similar CWEs on different code tools didn’t necessarily mean those were all concrete and fit to our system but allowed us to take a closer look at the results that ultimately had ones that were true to our OSS. One of the tougher parts was combing through all of this data and making sure it was relevant to our system. In some cases it felt like there was a lot of noise being presented to us, however after utilizing multiple code analysis scans we could narrow the results down to our system needs. Additionally our group did a great job in our group discussion working around tasks and making clear expectations which allowed us to work cohesively for this section of milestone.
