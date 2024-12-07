@@ -23,10 +23,12 @@
 ***
 
 #### Automated Tool Selection
-1) CodeQL (GitHub Integration)
-2) SonarCloud
-3) Flaw Finder
-4) Fortify
+1) SonarCloud
+2) CodeQL
+3) Fortify
+4) Flaw Finder
+   
+>>> TODO: do we need to add why we picked what? maybe not?
    
 #### What challenges did you expect before starting the code review?
 
@@ -55,7 +57,7 @@
 (INSERT IMAGES OF ANALYSIS HERE)
 - About 30 results
 ***
-#### Automated #3 [Fortify Scan - Union Pacific Railroad Setup](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/suricata-version-Fortify_Security_Report.pdf)
+#### Automated #3 [Fortify Scan](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/suricata-version-Fortify_Security_Report.pdf)
 (INSERT IMAGES OF PRETTY UI FPR FILE HERE)
 
 >>> TODO: Nathan summerize cleanly why and limitation of scanning this way
@@ -71,44 +73,45 @@
 We found common CWEs we expected to find in our checklist in our automated review:
 1) CWE-134
 >>> TODO: Grace
->>> Description
->>> Found in files list/link
->>> Analysis (Manual/Automated)
+>>> Description,
+>>> Found in files list/link,
+>>> Analysis (Manual/Automated),
 >>> Summary
+
 ***
 
 2) CWE-22
 >>> TODO: Matt
->>> Description
->>> Found in files list/link
->>> Analysis (Manual/Automated)
+>>> Description,
+>>> Found in files list/link,
+>>> Analysis (Manual/Automated),
 >>> Summary
 
 ***
 
 3) CWE-73
 >>> TODO: Ben
->>> Description
->>> Found in files list/link
->>> Analysis (Manual/Automated)
+>>> Description,
+>>> Found in files list/link,
+>>> Analysis (Manual/Automated),
 >>> Summary
 
 ***
 
 4) CWE-79
 >>> TODO: Nathan 
->>> Description
->>> Found in files list/link
->>> Analysis (Manual/Automated)
+>>> Description,
+>>> Found in files list/link,
+>>> Analysis (Manual/Automated),
 >>> Summary
 
 ***
 
 5) CWE-14 or CWE-367
 >>> TODO: Shane 
->>> Description
->>> Found in files list/link
->>> Analysis (Manual/Automated)
+>>> Description,
+>>> Found in files list/link,
+>>> Analysis (Manual/Automated),
 >>> Summary
 
 ***
