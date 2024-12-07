@@ -58,14 +58,12 @@
 - About 30 results
 ***
 #### Automated #3 [Fortify Scan](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/suricata-version-Fortify_Security_Report.pdf)
-(INSERT IMAGES OF PRETTY UI FPR FILE HERE)
 
->>> TODO: Nathan summerize cleanly why and limitation of scanning this way
-- Used Union Pacific local workbench Fortify utility
-- Found it only worked on python and other misc files (not C/Rust code)
-- FPR file is Foritfy utility format to "pretty format" see results
-- PDF file is exhaustive list with details of each
-- 
+![image](https://github.com/user-attachments/assets/052d0c3a-76dc-404b-b345-d74d219df8c1)
+
+Nathan setup the Fortify scan not on a GitHub intergration but rather using his work's (Union Pacific Railroad) provided Fortify utility scanning setup and default rules. He thought this would be a good "industry standard" approach as this is the same scan the rest of the code that runs in production goes through. Interestingly enough though it didn't actually scan all the C and Rust language files. It specifically captured the Python and other utility files (like Docker) where credentials are stored. So the results were not fully "inclusive" but it did give an interesting unique insight others may not be able to do.
+
+  
 ***
 ## Part 2: Key Findings and Contributions
 ### Summary of Findings
@@ -98,12 +96,26 @@ We found common CWEs we expected to find in our checklist in our automated revie
 
 ***
 
-4) CWE-79
->>> TODO: Nathan 
->>> Description,
->>> Found in files list/link,
->>> Analysis (Manual/Automated),
->>> Summary
+4) CWE-95
+#### Description
+CWE-95 is defined as "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')". The code receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval"). This may allow an attacker to execute arbitrary code, or at least modify what code can be executed.
+
+#### Found in files
+[LINE 259 of suricatasc.py](https://github.com/OISF/suricata/blob/master/python/suricata/sc/suricatasc.py#L259)
+![image](https://github.com/user-attachments/assets/3510aa98-ecd7-4c16-a946-af609c372571)
+
+#### Analysis
+The Fortify Scan produced an FPR file with results that could be opened with it's Fortify Workbench Tool (and a summary PDF of results). We took a screenshot of the workbench utility reporting these results.
+![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/1-critical-cwe95-cwe494-cwe094.PNG)
+
+#### Summary
+The automated fortify scan found this "Critical" issue of accepting user input. However I believe it is a false positive based on my review. Specifically the Fortify valunerability and CWE is indicating that user input is not sanitized before being executed. However, once you review the rest of the code starting with the function's name you see that it's interactive user input and more specitically the user is selecting from the list of options of commands. If the user is not allowed to enter anything like they, the vulnerability doesn't actually exist. 
+![image](https://github.com/user-attachments/assets/db21cf22-8fea-4b59-b99d-34c0963fd4b5)
+
+This is command-line interafaces so they're not able to "hack" the UI to enter invalid inputs another way. They only are given a set of options. 
+![image](https://github.com/user-attachments/assets/a17c3f9c-a2d0-4fb3-8c42-2a23e963f0ea)
+
+So based on my findings this is actually a false positive. I picked this example due to it being reported as critical, easily visiblity manually reviewed and actually a false positive. From expierence, this is a very REAL situation in industry. I (Nathan) work at Union Pacific Railroad and we use automated Fortify Scan results in our CI/CD pipeline for deployments to prevent code from going to prod if they have a critical vulnerability like this. So this could would not be "deployable" to production based on this without an exception. As well, when we delivered code to a client (the Norfolk Southern Railroad) we had to provide these Fortify scan results to prove none were in the deliverable executable code we provided. I find these scenarios a very good example of how automation isn't perfect. 
 
 ***
 
