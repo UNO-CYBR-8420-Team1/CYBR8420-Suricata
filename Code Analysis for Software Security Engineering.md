@@ -48,8 +48,9 @@
 
 ### Automated Code Scan Findings
 #### Automated #1 [SonarCloud](https://sonarcloud.io/)
-(INSERT IMAGES OF ANALYSIS HERE)
 [SonarCloud Analysis Output Link](https://sonarcloud.io/summary/overall?id=shellis0_suricata)
+
+![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/SonarCloud%20Scan%20Reults%20Image.png)
 
 ***
 
