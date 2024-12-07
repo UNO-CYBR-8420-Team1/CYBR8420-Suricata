@@ -59,10 +59,14 @@
 ***
 #### Automated #3 [Fortify Scan](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/suricata-version-Fortify_Security_Report.pdf)
 
+#### Automated #4 Flaw Finder
+>>> TODO: Grace ad more details here
+***
 ![image](https://github.com/user-attachments/assets/052d0c3a-76dc-404b-b345-d74d219df8c1)
 
-Nathan setup the Fortify scan not on a GitHub intergration but rather using his work's (Union Pacific Railroad) provided Fortify utility scanning setup and default rules. He thought this would be a good "industry standard" approach as this is the same scan the rest of the code that runs in production goes through. Interestingly enough though it didn't actually scan all the C and Rust language files. It specifically captured the Python and other utility files (like Docker) where credentials are stored. So the results were not fully "inclusive" but it did give an interesting unique insight others may not be able to do.
+Nathan setup the Fortify scan using his work's (Union Pacific Railroad) provided Fortify utility scanning setup and default rules there (not on a GitHub intergration). He thought this would be a good "industry standard" approach as this is the same scan the rest of the code that runs in production goes through. Interestingly enough though it didn't actually scan all the C and Rust language files. It specifically captured the Python and other utility files (like Docker) where credentials are stored. So the results were not fully "inclusive" but it did give an interesting unique insight others may not be able to do.
 
+Linked are a PDF of results, but it's important to note the scan also produced an "FPR" file that could be opened by Fortify workbench software. This makes it easeir to review the scan results in a more "user friendly" way with more details. This includes full code references and additional details not seen in the PDF output. 
   
 ***
 ## Part 2: Key Findings and Contributions
