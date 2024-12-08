@@ -110,6 +110,7 @@ Flawfinder operates by:
 
 **Results**
 Before running Flawfinder, the first step was to obtain a local copy of the Suricata source code. This was achieved by cloning the project's Git repository, which provides access to the full codebase.
+![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/Screenshot%202024-12-08%20143309.png)
 
 ***
 
