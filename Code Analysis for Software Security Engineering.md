@@ -112,6 +112,33 @@ Flawfinder operates by:
 Before running Flawfinder, the first step was to obtain a local copy of the Suricata source code. This was achieved by cloning the project's Git repository, which provides access to the full codebase.
 ![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/Screenshot%202024-12-08%20143309.png)
 
+- **Format String Vulnerabilities (CWE-134)**
+
+printf in /plugins/napatech/util-napatech.h:86 and ./src/suricata-common.h:408
+
+snprintf in ./src/util-print.h:28
+
+syslog in ./src/win32-syslog.h:78
+
+Severity Level: 4
+
+**Impact**: If format strings can be influenced by an attacker, they may exploit these functions to execute arbitrary code or read sensitive memory.
+
+- **Command Execution Vulnerabilities (CWE-78)**
+  
+system in ./src/suricata.h:144 and ./src/util-reference-config.h:37
+
+Severity Level: 4
+
+**Impact:** The system function executes shell commands, making it vulnerable to injection attacks if input is not properly sanitized.
+
+- **Weak Random Number Generation (CWE-327)**
+  
+Instance: random in ./src/app-layer-ssl.h:254
+
+Severity Level: 3
+
+**Impact**: The random() function is predictable and unsuitable for cryptographic purposes, such as generating keys or nonces.
 ***
 
 ***
