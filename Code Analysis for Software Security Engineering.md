@@ -147,12 +147,36 @@ Severity Level: 3
 >>> TODO:
 We found common CWEs we expected to find in our checklist in our automated review:
 1) CWE-134
->>> TODO: Grace
->>> Description,
->>> Found in files list/link,
->>> Analysis (Manual/Automated),
->>> Summary
+#### Description
+CWE-134 refers to a class of vulnerabilities that arise when user-controlled input is used as a format string in functions such as **printf, snprintf, fprintf, or syslog** without proper validation. This vulnerability can allow attackers to execute arbitrary code, crash the application, or gain access to sensitive information.
 
+#### Found in files
+- **Format String Vulnerabilities (CWE-134)**
+
+printf in /plugins/napatech/util-napatech.h:86 and ./src/suricata-common.h:408
+
+snprintf in ./src/util-print.h:28
+
+syslog in ./src/win32-syslog.h:78
+
+Severity Level: 4
+
+**Impact**: If format strings can be influenced by an attacker, they may exploit these functions to execute arbitrary code or read sensitive memory.
+
+#### Analysis
+Flawfinder scans the source files in the repository for .c and.h files and breaks down the code into tokens and syntax elements for analysis. In this case, it scanned files like:
+
+- /plugins/napatech/util-napatech.h
+- ./src/suricata-common.h
+- ./src/util-print.h
+- ./src/win32-syslog.h
+
+<img width="302" alt="image" src="https://github.com/user-attachments/assets/d8557f09-58c7-466d-a012-89a9e375b25d">
+
+
+#### Summary
+
+It seems like Flawfinder analysis of the Suricata codebase identified multiple instances of CWE-134. These vulnerabilities occur when user-controlled input is used as a format string, potentially allowing attackers to execute arbitrary code, crash the application, or expose sensitive information. This is an interesting finding as other automated tools may have found this as a vulnerability but not as an emphasis.
 ***
 
 2) CWE-22
