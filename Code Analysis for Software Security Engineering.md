@@ -92,8 +92,25 @@ Nathan setup the Fortify scan using his work's (Union Pacific Railroad) provided
 
 Linked are a PDF of results, but it's important to note the scan also produced an "FPR" file that could be opened by Fortify workbench software. This makes it easeir to review the scan results in a more "user friendly" way with more details. This includes full code references and additional details not seen in the PDF output. 
 
-#### Automated #4 Flaw Finder
->>> TODO: Grace ad more details here
+#### Automated #4 [Flaw Finder](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/flawfinder_results.txt)
+Flawfinder is a static analysis tool specifically designed for C and C++ programs. This language is used in our open-source projects Suricata. Writting in this language is prone to common security vulnerabilities such as buffer overflows, format string vulnerabilities, and unsafe memory operations. Flawfinder is a suitable choice because:
+
+- **Targeted for C/C++:** It has a comprehensive database of over 200 rules targeting common pitfalls in C/C++ codebases.
+- **Quick Analysis**: It provides rapid analysis of large codebases, identifying vulnerabilities with minimal setup.
+- **Free and Open-Source:** As an open-source tool, Flawfinder aligns well with the ethos of analyzing other open-source projects like Suricata.
+- **Granular Reporting:** It categorizes findings by risk levels, allowing teams to prioritize remediation efforts effectively.
+- 
+**How Flawfinder Works**
+Flawfinder operates by:
+- **Parsing Source Code**: It examines the source files line by line to identify potentially dangerous functions and constructs.
+- **Matching Patterns**: It matches code patterns against a database of known vulnerable functions (e.g., printf, system, random).
+- **Assigning Risk Levels**: Each finding is assigned a risk level from 0 (low) to 5 (high), helping developers prioritize their attention.
+- **Providing Recommendations**: The tool offers practical suggestions for mitigating the identified vulnerabilities.
+- **Performance Metrics**: Flawfinder also provides performance statistics, such as lines of code analyzed per second, and summarizes the overall risk.
+
+**Results**
+Before running Flawfinder, the first step was to obtain a local copy of the Suricata source code. This was achieved by cloning the project's Git repository, which provides access to the full codebase.
+
 ***
 
 ***
