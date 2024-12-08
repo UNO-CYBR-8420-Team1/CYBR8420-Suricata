@@ -164,9 +164,8 @@ We found common CWEs we expected to find in our checklist in our automated revie
 
 ***
 
-3) CWE-73
->>> TODO: Ben
->>> Description,
+3) [CWE-73: External Control of File Name or Path](https://cwe.mitre.org/data/definitions/73.html)
+   Description: The product allows user input to control or influence paths or file names that are used in filesystem operations. 
 >>> Found in files list/link,
 >>> Analysis (Manual/Automated),
 >>> Summary
