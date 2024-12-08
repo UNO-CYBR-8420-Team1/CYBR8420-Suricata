@@ -28,7 +28,7 @@
 3) Fortify
 4) Flaw Finder
    
->>> TODO: do we need to add why we picked what? maybe not?
+Our team decided to use a handful of automated code analysis tools to get a chance to utilize a diverse set of tools while providing a comprehensive report of these findings. The ability to run more than one automated code analysis tool allows us to see what other tools are also finding to see if there is any noise or really hone in on particular areas of focus. The flip side of this is that we could also run into more noise that needs to be sifted through to better see if it's a true vulnerability or issue for our system. The above are the tools we utilized and the results of our findings can be found below.
    
 #### What challenges did you expect before starting the code review?
 
