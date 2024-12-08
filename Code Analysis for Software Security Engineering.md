@@ -188,11 +188,12 @@ It seems like Flawfinder analysis of the Suricata codebase identified multiple i
 
 ***
 
-3) [CWE-73: External Control of File Name or Path](https://cwe.mitre.org/data/definitions/73.html)
-   Description: The product allows user input to control or influence paths or file names that are used in filesystem operations. 
->>> Found in files list/link,
->>> Analysis (Manual/Automated),
->>> Summary
+3) [CWE-73](https://cwe.mitre.org/data/definitions/73.html) **External Control of File Name or Path**
+#### Description
+The product allows user input to control or influence paths or file names that are used in filesystem operations. 
+#### Found in files list/link,
+#### Analysis (Manual/Automated),
+#### Summary
 
 ***
 
