@@ -52,6 +52,11 @@
 
 ![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/SonarCloud%20Scan%20Reults%20Image.png)
 
+| **Security Issue** | **Severity** | **CWE Entry** | **Affected Files** |
+| :--------------------------------------------------------- | :--: | :------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| Acessing files should not introduce TOCTOU vulnerabilities | High | [CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition](https://cwe.mitre.org/data/definitions/367) | [src/conf-yaml-loader.c](https://github.com/OISF/suricata/blob/master/src/conf-yaml-loader.c) |
+| "memset" should not be used to delete sensitive data       | High | [CWE-14: Compiler Removal of Code to Clear Buffers](https://cwe.mitre.org/data/definitions/14.html)      | There are 22 affected files are listed. Many files pertain to alerts, logs, outputs, and utilities. Examples include: [src/alert-debuglog.c](https://github.com/OISF/suricata/blob/master/src/alert-debuglog.c), [src/log-tcp-data.c](https://github.com/OISF/suricata/blob/master/src/log-tcp-data.c), [src/output-json-file.c](https://github.com/OISF/suricata/blob/master/src/output-json-file.c), [src/util-logopenfile.c](https://github.com/OISF/suricata/blob/master/src/util-logopenfile.c) |
+
 ***
 
 #### Automated #2 [GITHUB CodeQL](https://github.com/nsteck17/suricata/security/code-scanning)
