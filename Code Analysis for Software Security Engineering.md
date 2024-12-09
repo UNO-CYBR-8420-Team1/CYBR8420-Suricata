@@ -225,7 +225,7 @@ So based on my findings this is actually a false positive. I picked this example
 As was briefly mentioned in the automated code scan findings pertaining to SonarCloud, CWE-367 identifies the weakness "Time-of-check Time-of-use (TOCTOU) Race Condition". This weakness involves both software states and timing where a malicious actor may try to gain access to the affected software, in this case the configuration file of Suricata, in order to conduct some unsavory actions within the system. The malicious action outlined in this weakness would happen in the time that has elapsed between the moment a piece of software has had its state verified for its integrity and the time when the software is put to use. This finding has relevancy to Suricata as the weakness has been found to be most impactful in software like Suricata that has an emphasis on "files, memory, or even variables in multithreaded programs". 
 
 #### Affected files
-The file in which the CWE was raised from the automated scan was in [src/conf-yaml-loader.c](https://github.com/OISF/suricata/blob/master/src/conf-yaml-loader.c) on [line 500](https://github.com/OISF/suricata/blob/master/src/conf-yaml-loader.c#L500) and [line 578](https://github.com/OISF/suricata/blob/master/src/conf-yaml-loader.c#L578).
+The file in which the CWE was raised from the automated scan was in src/conf-yaml-loader.c on [line 500](https://github.com/OISF/suricata/blob/master/src/conf-yaml-loader.c#L500) and [line 578](https://github.com/OISF/suricata/blob/master/src/conf-yaml-loader.c#L578).
 
 **Line 500** \
 ![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/Suricata%20CWE-367%20Image%201.png)
@@ -254,8 +254,36 @@ This CWE was one of two CWEs provided by the automated code scan conducted using
 6) [CWE-14](https://cwe.mitre.org/data/definitions/14.html): Compiler Removal of Code to Clear Buffers
 >>> TODO: Shane 
 #### Description
-#### Found in files list/link
+
+#### Affected Files
+
+| File Name                 | Line Number                                                                        |
+| :------------------------ | :--------------------------------------------------------------------------------: |
+| src/alert-debuglog.c      | [411](https://github.com/OISF/suricata/blob/master/src/alert-debuglog.c#L411)      |
+| src/alert-fastlog.c       | [215](https://github.com/OISF/suricata/blob/master/src/alert-fastlog.c#L215)       |
+| src/log-httplog.c         | [538](https://github.com/OISF/suricata/blob/master/src/log-httplog.c#L538)         |
+| src/log-stats.c           | [200](https://github.com/OISF/suricata/blob/master/src/log-stats.c#L200)           |
+| src/log-tcp-data.c        | [201](https://github.com/OISF/suricata/blob/master/src/log-tcp-data.c#L201)        |
+| src/log-tlslog.c          | [160](https://github.com/OISF/suricata/blob/master/src/log-tlslog.c#L160)          |
+| src/log-tlsstore.c        | [379](https://github.com/OISF/suricata/blob/master/src/log-tlsstore.c#L379)        |
+| src/output-eve-stream.c   | [106](https://github.com/OISF/suricata/blob/master/src/output-eve-stream.c#L106)   |
+| src/output-filestore.c    | [297](https://github.com/OISF/suricata/blob/master/src/output-filestore.c#L297)    |
+| src/output-json-alert.c   | [876](https://github.com/OISF/suricata/blob/master/src/output-json-alert.c#L876)   |
+| src/output-json-anomaly.c | [327](https://github.com/OISF/suricata/blob/master/src/output-json-anomaly.c#L327) |
+| src/output-json-dns.c     | [478](https://github.com/OISF/suricata/blob/master/src/output-json-dns.c#L478)     |
+| src/output-json-drop.c    | [237](https://github.com/OISF/suricata/blob/master/src/output-json-drop.c#L237)    |
+| src/output-json-file.c    | [282](https://github.com/OISF/suricata/blob/master/src/output-json-file.c#L282)    |
+| src/output-json-frame.c   | [484](https://github.com/OISF/suricata/blob/master/src/output-json-frame.c#L484)   |
+| src/output-json-http.c    | [645](https://github.com/OISF/suricata/blob/master/src/output-json-http.c#L645)    |
+| src/output-json-smtp.c    | [186](https://github.com/OISF/suricata/blob/master/src/output-json-smtp.c#L186)    |
+| src/output-json-stats.c   | [411](https://github.com/OISF/suricata/blob/master/src/output-json-stats.c#L411)   |
+| src/output-json-tls.c     | [547](https://github.com/OISF/suricata/blob/master/src/output-json-tls.c#L547)     |
+| src/output-lua.c          | [882](https://github.com/OISF/suricata/blob/master/src/output-lua.c#L882)          |
+| src/stream-tcp.c          | [6042](https://github.com/OISF/suricata/blob/master/src/stream-tcp.c#L6042)        |
+| src/util-logopenfile.c    | [927](https://github.com/OISF/suricata/blob/master/src/util-logopenfile.c#L927)    |
+
 #### Analysis (Manual/Automated)
+
 #### Summary
 
 ***
