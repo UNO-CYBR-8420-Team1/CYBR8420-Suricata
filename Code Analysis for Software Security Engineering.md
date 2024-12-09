@@ -180,11 +180,21 @@ It seems like Flawfinder analysis of the Suricata codebase identified multiple i
 ***
 
 2) [CWE-22](https://cwe.mitre.org/data/definitions/22.html) **Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')**
->>> TODO: Matt
->>> Description,
->>> Found in files list/link,
->>> Analysis (Manual/Automated),
->>> Summary
+### Description
+CWE-22 is a weakness that stems from a failure to validate user input when specifying a path or directory name. A malicious user could insert special sequences of characters into 
+the specified path or directory ("../", for example) that may allow the user to access unintended/unauthorized files/directories.
+### Found in Files List/Link
+Line 1182 of suricata/src/util-debug.c
+![image](https://github.com/user-attachments/assets/a48a46e7-f399-4662-9021-3b923c1acb93)
+
+Line 185 of rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/luac.c
+Line 374 of rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/lua.c
+
+### Analysis Via CodeQL
+CodeQL warned of CWE-22 existing in the Suricata codebase at the locations specified above. Specifically, when looking at the code snippet of suricata/src/util-debug.c, one can observe that the variables in the “SC_LOG_OP_IFACE_FILE” case do not have any sort of validation applied to them. This could lead to cases highlighted in CWE-22 where a user could utilize syntax like “../” to access unauthorized directories and paths. In a hospital setting, users that are able to traverse unintended paths could easily navigate to directories that contain personally identifiable information. This would be a major breach of HIPAA and could lead to serious consequences for the hospital if this weakness is not mitigated.
+### Summary
+The high-severity CWE-22 weakness in Suricata highlighted by the CodeQL analysis has the potential to critically impact the hospital by way of a major HIPAA violation. A best practice would be to sanitize input from users by using [input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) to prevent users from submitting unexpected data and accessing different data paths and directories. 
+
 
 ***
 
