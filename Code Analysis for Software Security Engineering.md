@@ -146,7 +146,7 @@ Severity Level: 3
 ### Summary of Findings
 >>> TODO:
 We found common CWEs we expected to find in our checklist in our automated review:
-1) [CWE-134](https://cwe.mitre.org/data/definitions/134.html)
+1) [CWE-134](https://cwe.mitre.org/data/definitions/134.html) **Use of Externally-Controlled Format String**
 #### Description
 CWE-134 refers to a class of vulnerabilities that arise when user-controlled input is used as a format string in functions such as **printf, snprintf, fprintf, or syslog** without proper validation. This vulnerability can allow attackers to execute arbitrary code, crash the application, or gain access to sensitive information.
 
@@ -179,7 +179,7 @@ Flawfinder scans the source files in the repository for .c and.h files and break
 It seems like Flawfinder analysis of the Suricata codebase identified multiple instances of CWE-134. These vulnerabilities occur when user-controlled input is used as a format string, potentially allowing attackers to execute arbitrary code, crash the application, or expose sensitive information. This is an interesting finding as other automated tools may have found this as a vulnerability but not as an emphasis.
 ***
 
-2) [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
+2) [CWE-22](https://cwe.mitre.org/data/definitions/22.html) **Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')**
 >>> TODO: Matt
 >>> Description,
 >>> Found in files list/link,
@@ -209,7 +209,7 @@ The automated run offered plenty of suggestions to look into as a possible vulne
 
 ***
 
-4) [CWE-95](https://cwe.mitre.org/data/definitions/95.html)
+4) [CWE-95](https://cwe.mitre.org/data/definitions/95.html) **Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')**
 #### Description
 CWE-95 is defined as "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')". The code receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval"). This may allow an attacker to execute arbitrary code, or at least modify what code can be executed.
 
@@ -232,7 +232,7 @@ So based on my findings this is actually a false positive. I picked this example
 
 ***
 
-5) [CWE-367](https://cwe.mitre.org/data/definitions/367): Time-of-check Time-of-use (TOCTOU) Race Condition
+5) [CWE-367](https://cwe.mitre.org/data/definitions/367) **Time-of-check Time-of-use (TOCTOU) Race Condition**
 #### Description
 As was briefly mentioned in the automated code scan findings pertaining to SonarCloud, CWE-367 identifies the weakness "Time-of-check Time-of-use (TOCTOU) Race Condition". This weakness involves both software states and timing where a malicious actor may try to gain access to the affected software, in this case the configuration file of Suricata, in order to conduct some unsavory actions within the system. The malicious action outlined in this weakness would happen in the time that has elapsed between the moment a piece of software has had its state verified for its integrity and the time when the software is put to use. This finding has relevancy to Suricata as the weakness has been found to be most impactful in software like Suricata that has an emphasis on "files, memory, or even variables in multithreaded programs". 
 
@@ -263,7 +263,7 @@ This CWE was one of two CWEs provided by the automated code scan conducted using
 
 ***
 
-6) [CWE-14](https://cwe.mitre.org/data/definitions/14.html): Compiler Removal of Code to Clear Buffers
+6) [CWE-14](https://cwe.mitre.org/data/definitions/14.html) **Compiler Removal of Code to Clear Buffers**
 >>> TODO: Shane 
 #### Description
 
