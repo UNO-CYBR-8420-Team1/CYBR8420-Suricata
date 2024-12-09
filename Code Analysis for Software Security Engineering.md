@@ -31,9 +31,8 @@
 Our team decided to use a handful of automated code analysis tools to get a chance to utilize a diverse set of tools while providing a comprehensive report of these findings. The ability to run more than one automated code analysis tool allows us to see what other tools are also finding to see if there is any noise or really hone in on particular areas of focus. The flip side of this is that we could also run into more noise that needs to be sifted through to better see if it's a true vulnerability or issue for our system. The above are the tools we utilized and the results of our findings can be found below.
    
 #### What challenges did you expect before starting the code review?
-
->>> TODO:
->>> - Not familiar with C/Rust code
+Some challenges we expected before starting the code review were realising we aren’t super familiar with C or Rust code so that could prove a challenge for understanding our results. However, our code analysis tools allow us to have a better understanding of what it found while also providing an example and finding it in our code to give a better comprehension of our alert to our OSS code. Additionally, not coming from any prior knowledge for some team members and doing this for the first time proved to not necessarily be a huge challenge but a new one to take on and better understand how professionals review code on a daily basis allowing us to gain some exposure. We also knew if we all were doing different tools that trying to navigate them could be a little bit of a challenge and that the results we get from them could turn out to be noise and not necessarily something that needs to have attention put on immediately. 
+>>> TODO: The above was added
 
 #### How did your code review strategy attempt to address the anticipated challenges?
 
