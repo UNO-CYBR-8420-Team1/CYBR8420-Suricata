@@ -7,16 +7,16 @@
 
 ***
 #### CWE Checklist
-1) CWE-538: Insertion of Sensitive Information into Externally-Accessible File or Directory
-2) CWE-532: Insertion of Sensitive Information into Log File
-3) CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
-4) CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
-5) CWE-73: External Control of File Name or Path
-6) CWE-126: Buffer Over-read
-7) CWE-127: Buffer Under-read
-8) CWE-125: Out-of-bounds Read
-9) CWE-124: Buffer Underwrite ('Buffer Underflow')
-10) CWE-349: Acceptance of Extraneous Untrusted Data With Trusted Data
+1) [CWE-538](https://cwe.mitre.org/data/definitions/538.html): Insertion of Sensitive Information into Externally-Accessible File or Directory
+2) [CWE-532](https://cwe.mitre.org/data/definitions/532.html): Insertion of Sensitive Information into Log File
+3) [CWE-200](https://cwe.mitre.org/data/definitions/200.html): Exposure of Sensitive Information to an Unauthorized Actor
+4) [CWE-22](https://cwe.mitre.org/data/definitions/22.html): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+5) [CWE-73](https://cwe.mitre.org/data/definitions/73.html): External Control of File Name or Path
+6) [CWE-126](https://cwe.mitre.org/data/definitions/126.html): Buffer Over-read
+7) [CWE-127](https://cwe.mitre.org/data/definitions/127.html): Buffer Under-read
+8) [CWE-125](https://cwe.mitre.org/data/definitions/125.html): Out-of-bounds Read
+9) [CWE-124](https://cwe.mitre.org/data/definitions/124.html): Buffer Underwrite ('Buffer Underflow')
+10) [CWE-349](https://cwe.mitre.org/data/definitions/349.html): Acceptance of Extraneous Untrusted Data With Trusted Data
 
 >>>TODO: Shane add more details here 
 
@@ -146,7 +146,7 @@ Severity Level: 3
 ### Summary of Findings
 >>> TODO:
 We found common CWEs we expected to find in our checklist in our automated review:
-1) CWE-134
+1) [CWE-134](https://cwe.mitre.org/data/definitions/134.html)
 #### Description
 CWE-134 refers to a class of vulnerabilities that arise when user-controlled input is used as a format string in functions such as **printf, snprintf, fprintf, or syslog** without proper validation. This vulnerability can allow attackers to execute arbitrary code, crash the application, or gain access to sensitive information.
 
@@ -179,7 +179,7 @@ Flawfinder scans the source files in the repository for .c and.h files and break
 It seems like Flawfinder analysis of the Suricata codebase identified multiple instances of CWE-134. These vulnerabilities occur when user-controlled input is used as a format string, potentially allowing attackers to execute arbitrary code, crash the application, or expose sensitive information. This is an interesting finding as other automated tools may have found this as a vulnerability but not as an emphasis.
 ***
 
-2) CWE-22
+2) [CWE-22](https://cwe.mitre.org/data/definitions/22.html)
 >>> TODO: Matt
 >>> Description,
 >>> Found in files list/link,
@@ -209,7 +209,7 @@ The automated run offered plenty of suggestions to look into as a possible vulne
 
 ***
 
-4) CWE-95
+4) [CWE-95](https://cwe.mitre.org/data/definitions/95.html)
 #### Description
 CWE-95 is defined as "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')". The code receives input from an upstream component, but it does not neutralize or incorrectly neutralizes code syntax before using the input in a dynamic evaluation call (e.g. "eval"). This may allow an attacker to execute arbitrary code, or at least modify what code can be executed.
 
