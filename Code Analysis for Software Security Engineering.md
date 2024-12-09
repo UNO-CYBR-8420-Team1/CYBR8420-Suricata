@@ -220,12 +220,21 @@ So based on my findings this is actually a false positive. I picked this example
 
 ***
 
-5) CWE-14 or CWE-367
+5) [CWE-367](https://cwe.mitre.org/data/definitions/367): Time-of-check Time-of-use (TOCTOU) Race Condition
 >>> TODO: Shane 
->>> Description,
->>> Found in files list/link,
->>> Analysis (Manual/Automated),
->>> Summary
+#### Description
+#### Found in files list/link
+#### Analysis (Manual/Automated)
+#### Summary
+
+***
+
+6) [CWE-14](https://cwe.mitre.org/data/definitions/14.html): Compiler Removal of Code to Clear Buffers
+>>> TODO: Shane 
+#### Description
+#### Found in files list/link
+#### Analysis (Manual/Automated)
+#### Summary
 
 ***
 >>> TODO: Overall notes? maybe not?
