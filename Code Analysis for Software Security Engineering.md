@@ -191,7 +191,14 @@ It seems like Flawfinder analysis of the Suricata codebase identified multiple i
 3) [CWE-73](https://cwe.mitre.org/data/definitions/73.html) **External Control of File Name or Path**
 #### Description
 The product allows user input to control or influence paths or file names that are used in filesystem operations. 
-#### Found in files list/link,
+#### Found in files list/link
+| File Name                 | Line Number                                                                        |
+| :------------------------ | :--------------------------------------------------------------------------------: |
+| rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/lua.c:374    | [374](https://github.com/nsteck17/suricata/security/code-scanning/12)      |
+| rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/luac.c:185       | [185](https://github.com/nsteck17/suricata/security/code-scanning/13)      |
+| src/util-debug.c:1182         | [1182](https://github.com/nsteck17/suricata/security/code-scanning/13)         |
+
+
 #### Analysis (Manual/Automated),
 #### Summary
 
