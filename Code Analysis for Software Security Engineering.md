@@ -264,11 +264,10 @@ This CWE was one of two CWEs provided by the automated code scan conducted using
 ***
 
 6) [CWE-14](https://cwe.mitre.org/data/definitions/14.html) **Compiler Removal of Code to Clear Buffers**
->>> TODO: Shane 
 #### Description
+Also touched on from the automated scan results returned from SonarCloud was the identification of CWE-14 which concerns the "Compiler Removal of Code to Clear Buffers". In this instance 22 separate files, listed in the table found below, were connected to this CWE. The concern of this CWE is with the manner in which a compiler may handle memory deallocation actions. Some compilers may choose omit the action during compilation which could result in the persistence of memory containing private information. The significance of this CWE with respect to Suricata comes from affected files which include many of those responsible for the reporting features of the software application.
 
 #### Affected Files
-
 | File Name                 | Line Number                                                                        |
 | :------------------------ | :--------------------------------------------------------------------------------: |
 | src/alert-debuglog.c      | [411](https://github.com/OISF/suricata/blob/master/src/alert-debuglog.c#L411)      |
@@ -280,13 +279,13 @@ This CWE was one of two CWEs provided by the automated code scan conducted using
 | src/log-tlsstore.c        | [379](https://github.com/OISF/suricata/blob/master/src/log-tlsstore.c#L379)        |
 | src/output-eve-stream.c   | [106](https://github.com/OISF/suricata/blob/master/src/output-eve-stream.c#L106)   |
 | src/output-filestore.c    | [297](https://github.com/OISF/suricata/blob/master/src/output-filestore.c#L297)    |
-| src/output-json-alert.c   | [876](https://github.com/OISF/suricata/blob/master/src/output-json-alert.c#L876)   |
+| src/output-json-alert.c   | [888](https://github.com/OISF/suricata/blob/master/src/output-json-alert.c#L888)   |
 | src/output-json-anomaly.c | [327](https://github.com/OISF/suricata/blob/master/src/output-json-anomaly.c#L327) |
 | src/output-json-dns.c     | [478](https://github.com/OISF/suricata/blob/master/src/output-json-dns.c#L478)     |
 | src/output-json-drop.c    | [237](https://github.com/OISF/suricata/blob/master/src/output-json-drop.c#L237)    |
 | src/output-json-file.c    | [282](https://github.com/OISF/suricata/blob/master/src/output-json-file.c#L282)    |
 | src/output-json-frame.c   | [484](https://github.com/OISF/suricata/blob/master/src/output-json-frame.c#L484)   |
-| src/output-json-http.c    | [645](https://github.com/OISF/suricata/blob/master/src/output-json-http.c#L645)    |
+| src/output-json-http.c    | [641](https://github.com/OISF/suricata/blob/master/src/output-json-http.c#L641)    |
 | src/output-json-smtp.c    | [186](https://github.com/OISF/suricata/blob/master/src/output-json-smtp.c#L186)    |
 | src/output-json-stats.c   | [411](https://github.com/OISF/suricata/blob/master/src/output-json-stats.c#L411)   |
 | src/output-json-tls.c     | [547](https://github.com/OISF/suricata/blob/master/src/output-json-tls.c#L547)     |
@@ -294,9 +293,11 @@ This CWE was one of two CWEs provided by the automated code scan conducted using
 | src/stream-tcp.c          | [6042](https://github.com/OISF/suricata/blob/master/src/stream-tcp.c#L6042)        |
 | src/util-logopenfile.c    | [927](https://github.com/OISF/suricata/blob/master/src/util-logopenfile.c#L927)    |
 
-#### Analysis (Manual/Automated)
+#### Analysis
+Following a review of each of the affected files, the recurring element seen among each of the file entries is in relation to the use of `memeset()`. In each instance a specific location in memory is being accessed to be assigned the `0` to clear out the indicated memory to the full size of the memory location. An alternative suggested to address this CWE would be to consider the use of an alternative to `memset()` denoted `memset_s()`. According to [documentation](https://en.cppreference.com/w/c/string/byte/memset) for `memset_s()`, the function be behaves like `memset()` with the inclusion of an additional input paramater for the size of the memory location being focused on, which too could be filled with the size of the memory location as is currently being done. The benefit utilizing `memset_s()` is that it would not be optimized out of compilation owing to a more definitive memory deallocation process.
 
 #### Summary
+Similarly to CWE-367, this weakness was provided a closer manual review due to the files that were associated from Suricata as well as its similarity with our [fourth misuse case](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Requirements%20for%20Software%20Security%20Engineering.md#usemisuse-case-4-log-analysis-and-manipulation) from a previous project deliverable. The reporting features of Suricata are core to its use much like that of its configuration. With it acting as a network analysis tool, it is vital for it to function as is intended to be able to continue reporting on potential malicious activities. This holds relevance to a hospital envrionment as administrators are responsible ensuring disruptions are not experienced over the hospital network. Likewise, it is of critical importance that no valuable information is accquired by malicious users such as those of patients or caregivers. While not all reports generated by Suricata will be of value to those seeking to cause harm to an environment, there will likely be information present in reporting files that would be of interest in order to case a system or network for possible points of exploitation. The possibility of not clearing reporting information fully from memory, depending on compiler selection and configuration, could feed this weakness allowing for said problems to be experienced.
 
 ***
 >>> TODO: Overall notes? maybe not?
