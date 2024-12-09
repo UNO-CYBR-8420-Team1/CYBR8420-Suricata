@@ -196,7 +196,7 @@ The product allows user input to control or influence paths or file names that a
 | :------------------------ | :--------------------------------------------------------------------------------: |
 | rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/lua.c:374    | [374](https://github.com/nsteck17/suricata/security/code-scanning/12)      |
 | rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/luac.c:185       | [185](https://github.com/nsteck17/suricata/security/code-scanning/13)      |
-| src/util-debug.c:1182         | [1182](https://github.com/nsteck17/suricata/security/code-scanning/13)         |
+| src/util-debug.c:1182         | [1182](https://github.com/nsteck17/suricata/security/code-scanning/14)         |
 
 
 #### Analysis CodeQL
