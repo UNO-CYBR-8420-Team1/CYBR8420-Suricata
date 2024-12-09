@@ -199,8 +199,13 @@ The product allows user input to control or influence paths or file names that a
 | src/util-debug.c:1182         | [1182](https://github.com/nsteck17/suricata/security/code-scanning/13)         |
 
 
-#### Analysis (Manual/Automated),
+#### Analysis CodeQL
+![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/CWE73Ex.PNG)
+
+As mentioned above there were three instances that CodeQL had found through the GitHub scan. There is a brief image above that shows the "Uncontrolled data used in path expression" #14 of Code Scanning Alerts as part of the code analysis from CodeQL. The anaylsis describes the results of this making it possible for a malicious actor to access resources that shouldn't normally be access such as files. For our environment in a healthcare industry, Health Insurance Portability and Accountability Act (HIPAA), is a huge concern along with Personally Identifiable Information (PII) the only people that should have access to this information are ones appointed by the administrators of the system and no malicious actors. As stated by the review a validation could prevent this from being a problem with the file names to prevent such a trouble of manipulation or unauthorized access to a restricted file.
+
 #### Summary
+The automated run offered plenty of suggestions to look into as a possible vulnerability spot, along with pointing the area of concern out was ways to remedy or best practices to stay away from external entity gaining unauthorized permission to this area such as restricting file name, creating an allow list, and also being aware of path separators.
 
 ***
 
