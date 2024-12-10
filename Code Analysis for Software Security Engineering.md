@@ -74,7 +74,7 @@ Incase access to the Fork and scan results are limited, here's a PDF of the page
 
 When creating the fork of Suricata, at first we struggled to get it working with CodeQL. We learned this is because the C code's build commands were not valid for the default CodeQL generated approach. After some trial and error (and educated review how CodeQL is setup/works) we finally saw that it is based on the .github/workflows/codeql.yml configuration and actually Suricata's source code actually already had an "advanced" setup [here](https://github.com/OISF/suricata/tree/master/.github/workflows) and finally we were able to get some results. 
 
-Our initial checklist of CWEs identified CWE-22 and CWE-73 that was found in by results of the CodeQL scans, confirming our original thoughts. 
+Our initial checklist of CWEs identified CWE-22 and CWE-73 that was found in the scanned results of CodeQL, confirming our original thoughts. 
 These both were associated to instances of "Uncontrolled data used in path expression" findings which there were three separate entries for in the results set. 
 ![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/CodeQL/Screenshot%202024-12-07%20100156.png)
   
@@ -83,19 +83,20 @@ These both were associated to instances of "Uncontrolled data used in path expre
 #### Automated #3 [Fortify Scan](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/UP%20Fortify%20Scan/suricata-version-Fortify_Security_Report.pdf)
 ![image](https://github.com/user-attachments/assets/052d0c3a-76dc-404b-b345-d74d219df8c1)
 
-Nathan setup the Fortify scan using his work's (Union Pacific Railroad) provided Fortify utility scanning setup and default rules there (not on a GitHub integration). He thought this would be a good "industry standard" approach as this is the same scan the rest of the code that runs in production goes through. Interestingly enough though it didn't actually scan all the C and Rust language files. It specifically captured the Python and other utility files (like Docker) where credentials are stored. So the results were not fully "inclusive" but it did give an interesting unique insight others may not be able to do.
+Nathan setup the Fortify scan using his work's (Union Pacific Railroad) provided Fortify utility scanning setup and default rules there (not on a GitHub integration). He thought this would be a good "industry standard" approach as this is the same scan the rest of the code that runs in production goes through. Interestingly enough though it didn't actually scan all the C and Rust language files. It specifically captured the Python and other utility files (like Docker) where credentials are stored. So the results were not fully "inclusive" but it did give a unique insight others may not be able to do.
 
-Linked are a PDF of results, but it's important to note the scan also produced an "FPR" file that could be opened by Fortify workbench software. This makes it easier to review the scan results in a more "user friendly" way with more details. This includes full code references and additional details not seen in the PDF output. 
+Linked is a PDF of results, but it's important to note the scan also produced an "FPR" file that could be opened by Fortify workbench software. This makes it easier to review the scan results in a more user friendly manner. This includes full code references and additional details not seen in the PDF output. 
 
-#### Automated #4 [Flaw Finder](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/flawfinder_results.txt)
-Flawfinder is a static analysis tool specifically designed for C and C++ programs. This language is used in our open-source projects Suricata. Writing in this language is prone to common security vulnerabilities such as buffer overflows, format string vulnerabilities, and unsafe memory operations. Flawfinder is a suitable choice because:
+#### Automated #4 [Flawfinder](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/flawfinder_results.txt)
+Flawfinder is a static analysis tool specifically designed for C and C++ programs. This language is used in our open-source project Suricata. Writing in this language is prone to common security vulnerabilities such as buffer overflows, format string vulnerabilities, and unsafe memory operations. Flawfinder is a suitable choice because:
 
 - **Targeted for C/C++:** It has a comprehensive database of over 200 rules targeting common pitfalls in C/C++ codebases.
 - **Quick Analysis**: It provides rapid analysis of large codebases, identifying vulnerabilities with minimal setup.
 - **Free and Open-Source:** As an open-source tool, Flawfinder aligns well with the ethos of analyzing other open-source projects like Suricata.
 - **Granular Reporting:** It categorizes findings by risk levels, allowing teams to prioritize remediation efforts effectively.
-- 
-**How Flawfinder Works**
+
+**How Flawfinder Works**\
+
 Flawfinder operates by:
 - **Parsing Source Code**: It examines the source files line by line to identify potentially dangerous functions and constructs.
 - **Matching Patterns**: It matches code patterns against a database of known vulnerable functions (e.g., printf, system, random).
