@@ -181,6 +181,7 @@ Line 1182 of suricata/src/util-debug.c
 ![image](https://github.com/user-attachments/assets/a48a46e7-f399-4662-9021-3b923c1acb93)
 
 Line 185 of rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/luac.c
+
 Line 374 of rust/target/release/build/suricata-lua-sys-efab3431b2955876/out/lua/luac.c
 
 ### Analysis Via CodeQL
@@ -320,7 +321,7 @@ Keeping in mind for future vulnerabilities or security troubles here are the ste
 - Shane
   - TODO
 - Matt
-  - TODO
+  - For the Suricata Code Analysis, I began my contributions by researching a scanning tool not currently in use by the team that had a free trial. I settled upon Endor Labs and created a trial account. From there, I forked Suricata to my personal GitHub and used Endor Labs to scan my forked repo for vulnerabilities. The results of the scan were not what I was expecting – none of the vulnerabilities produced from my scan were repeated by my teammates’ vulnerability scans. I researched a few vulnerabilities and looked up their locations within the repo, and I came to the conclusion that the scanning tool was not functioning as expected. I believe this had something to do with the free tier I was using. The team then divided up 5 CWEs to research and analyze from other vulnerability scans, and I took CWE-22: Improper Limitation of a Pathname to a Restricted Directory. I then examined where this CWE existed in the codebase and found mitigation strategies from OWASP to include in the final write up. Additionally, I participated in team meetings and collaborated with everyone to produce a quality deliverable on time.
 - Nathan
   - I started off by immediately attempting to fork the Suricata OOS GitHub codebase and get a quick setup of whatever running I could. However, I wasn't successful and didn't get back to it until after thankgiving when I could touchbase with Shane and Ben on 12/01/2024. Ben was attempting to get CodeQL running as well, so we prevent further duplication of efforts and I was able to get CodeQL setup working the next day and updated the team. I also leveraged my work's Fortify scanning installation at Union Pacific to attempt to scan the sourcecode however the tools were not configured for the C/Rust programming language and we got minimal results (we primarly focuses on Java and Javascript). In the group meeting I participated in our group discussion and the pressed to keep us organized and actionable by dividing up the assignments of individual deep dive of specific CWEs we found in our scan results so we can all make steps forward on individual contribution. I chose CWE-95 to do a deep dive on (with an example) based on my initial review of Fortify results and the related code. I am familiar with C++ from undergrad school years ago, but the C/Rust code took a bit to understand how to read. I also tried to put together the structure of the deliverables and first set of details for the team to try to build off of based on our team's initial agreement of how to layout details (adding notes to the reflection and other sections of this submission). 
     
