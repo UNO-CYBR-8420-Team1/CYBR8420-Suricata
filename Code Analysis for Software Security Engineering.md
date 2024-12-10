@@ -95,7 +95,7 @@ Flawfinder is a static analysis tool specifically designed for C and C++ program
 - **Free and Open-Source:** As an open-source tool, Flawfinder aligns well with the ethos of analyzing other open-source projects like Suricata.
 - **Granular Reporting:** It categorizes findings by risk levels, allowing teams to prioritize remediation efforts effectively.
 
-**How Flawfinder Works**\
+**How Flawfinder Works**
 
 Flawfinder operates by:
 - **Parsing Source Code**: It examines the source files line by line to identify potentially dangerous functions and constructs.
