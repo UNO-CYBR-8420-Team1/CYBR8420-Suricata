@@ -8,16 +8,12 @@ Our team started out the code review strategy by taking our past deliverables su
 #### CWE Checklist
 1) [CWE-538](https://cwe.mitre.org/data/definitions/538.html): Insertion of Sensitive Information into Externally-Accessible File or Directory
 2) [CWE-532](https://cwe.mitre.org/data/definitions/532.html): Insertion of Sensitive Information into Log File
-3) [CWE-200](https://cwe.mitre.org/data/definitions/200.html): Exposure of Sensitive Information to an Unauthorized Actor
-4) [CWE-22](https://cwe.mitre.org/data/definitions/22.html): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
-5) [CWE-73](https://cwe.mitre.org/data/definitions/73.html): External Control of File Name or Path
+3) [CWE-22](https://cwe.mitre.org/data/definitions/22.html): Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+4) [CWE-73](https://cwe.mitre.org/data/definitions/73.html): External Control of File Name or Path
+5) [CWE-125](https://cwe.mitre.org/data/definitions/125.html): Out-of-bounds Read
 6) [CWE-126](https://cwe.mitre.org/data/definitions/126.html): Buffer Over-read
 7) [CWE-127](https://cwe.mitre.org/data/definitions/127.html): Buffer Under-read
-8) [CWE-125](https://cwe.mitre.org/data/definitions/125.html): Out-of-bounds Read
-9) [CWE-124](https://cwe.mitre.org/data/definitions/124.html): Buffer Underwrite ('Buffer Underflow')
-10) [CWE-349](https://cwe.mitre.org/data/definitions/349.html): Acceptance of Extraneous Untrusted Data With Trusted Data
-
->>>TODO: Shane add more details here 
+8) [CWE-349](https://cwe.mitre.org/data/definitions/349.html): Acceptance of Extraneous Untrusted Data With Trusted Data
 
 ***
 
