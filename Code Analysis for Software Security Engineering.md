@@ -314,6 +314,10 @@ Similarly to CWE-367, this weakness was provided a closer manual review due to t
 ### Ongoing Contributions
 Team 1’s planned or ongoing contributions to the upstream OSS consist of keeping an eye on further developments of Suricata. There seems to be areas where the OSS can be improved such as a login function, integration with more SIEM like functions within the software if Suricata has aspirations of taking on such ideas to better sift through the data that it collects and permission based roles. As for code changes, our group is not as well versed on C and Rust code so the upkeep and contribution wouldn’t be much on the code change help. However, following up with recent implementations, updates, and understanding the news letters that are released help us stay more up to date and what to expect when reviewing OSS systems in an open source community. Suricata had a recent release and implementation as of October 1, 2024 and the community continues to support and fix vulnerabilities. As a group we would like to periodically stay on top with trends that we work with in our own environments and see possibly how they could contribute to other OSS systems.
 
+Keeping in mind for future vulnerabilities or security troubles here are the steps we would need to take / other OSS supports as follows:
+
+![image](https://github.com/UNO-CYBR-8420-Team1/CYBR8420-Suricata/blob/main/Code%20Analysis%20Brainstorm/Suricata%20Reporting%20Steps.PNG)
+
 ### [GITHUB Project Board Link](https://github.com/orgs/UNO-CYBR-8420-Team1/projects/1/views/2)
 ### Individual Contributions
 - Ben
