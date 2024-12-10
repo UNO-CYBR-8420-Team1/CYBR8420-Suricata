@@ -33,9 +33,12 @@ Our code review strategy helped address the anticipated challenges by first allo
 
 ***
 ### Manual Code Review Findings
+Our Manual Code Review Findings were speicific to the two CWEs listed below that we had intially selected based off of our overall review and considertation of systems engineering design diagram, misuse cases, assurance claims, and threat model analysis. After we had manually found the ones listed below we actually were able to see that they matched on other automated system scans to help reinforce these CWEs were of importance to our OSS system. Our code review wasn't as heavy on the manual side but was briefly touched on, we focused more heavily on the automated code analysis systema as they proved to be a better tools for analysis for our particular system. The CWEs that we took into consideration with the manual review were as follows:
 
->>> TODO: 
+CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')
+CWE-73: External Control of File Name or Path
 
+We talk about these more in the automated portion and how they related back to some of our previous milestones.
 ***
 
 ### Automated Code Scan Findings
