@@ -175,7 +175,7 @@ It seems like Flawfinder analysis of the Suricata codebase identified multiple i
 2) [CWE-22](https://cwe.mitre.org/data/definitions/22.html) **Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')**
 ### Description
 CWE-22 is a weakness that stems from a failure to validate user input when specifying a path or directory name. A malicious user could insert special sequences of characters into 
-the specified path or directory ("../", for example) that may allow the user to access unintended/unauthorized files/directories.
+the specified path or directory ("../", for example) that may allow the user to access unintended/unauthorized files and directories.
 ### Found in Files List/Link
 Line 1182 of suricata/src/util-debug.c
 ![image](https://github.com/user-attachments/assets/a48a46e7-f399-4662-9021-3b923c1acb93)
